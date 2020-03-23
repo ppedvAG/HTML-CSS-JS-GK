@@ -31,7 +31,7 @@ WAS IST CSS
 - cascading style sheets
 - style language
 - Keine Programmiersprache
-- Aktuelle Version    <!-- #checkForUpdates -->
+- Aktuelle Version 3   <!-- #checkForUpdates -->
 
 WOZU IST CSS
 
