@@ -47,8 +47,8 @@ Bemerkung: Page (wie auf den Tasten PageUp und PageDown) ist Anzahl von Zeilen, 
 | `git keep` | um auch leere Ordner ohne Dateien dem Repo hinzuzufügen |
 
 <!-- 
-git config user.name "yourGit(Hub)Name"
-git config user.email "yourGit(Hub)Email"
+git config --global user.name "yourGit(Hub)Name"
+git config --global user.email "yourGit(Hub)Email"
  -->
 
 [git homepage](https://git-scm.com)
