@@ -80,7 +80,7 @@ commited
 
 - [x] Content Types
 - [x] [html-lists.html](./theory-app/html-lists.html)
-- [ ] Daten strukturieren - HTML Tabellen & Listen
+- [x] [html-tables.html](./theory-app/html-tables.html)
 - [ ] Navigation einer Webseite
 - [ ] Inhalt gruppieren - Sectioning, Headings & Co
 
