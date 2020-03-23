@@ -52,16 +52,16 @@
 
 ## M07 | CODE SNIPPETS
 
-- [ ] HTML Emmet
-- [ ] CSS Emmet
-- [ ] ES Snippets
+- [x] [html-emmet.html](./theory-app/html-emmet.html)
+- [x] CSS Emmet
+- [x] ES Snippets
 
 ## M0 | HTML CONTINUED
 
-- [ ] Content Types
+- [x] Content Types
+- [ ] Daten strukturieren - HTML Tabellen & Listen
 - [ ] Navigation einer Webseite
 - [ ] Inhalt gruppieren - Sectioning, Headings & Co
-- [ ] Daten strukturieren - HTML Tabellen & Listen
 
 ## M0 | CSS CONTINUED
 
