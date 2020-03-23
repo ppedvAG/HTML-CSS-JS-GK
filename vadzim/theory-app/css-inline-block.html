@@ -11,6 +11,11 @@
             background-color: orangered;
         }
 
+        /* 
+        span haben bei display den Wert inline 
+        p haben bei display den Wert block
+        */
+        
         .bsp2 {
             width: 100px;
             height: 100px;
@@ -29,8 +34,9 @@
         }
 
         .bsp5 {
-            /* display: block; */
-            display: inline;
+            display: block;
+            margin: 0;
+            /* display: inline; */
         }
     </style>
 </head>
@@ -78,8 +84,8 @@
 
     <h2>5. Kann ich die display-Prop überall ändern?</h2>
     <pre>
-        inline zu block - funktioniert (bedingt: keine Abstände unten und oben)
-        block zu inline - funktioniert einwandfrei
+        inline zu block - funktioniert
+        block zu inline - funktioniert
     </pre>
     <p class="bsp5">paragraph</p>
     <p class="bsp5">paragraph</p>
