@@ -10,12 +10,19 @@
             background-color:springgreen;
         }
         p {
+            /* Block Elemente werde zu inline Elementen */
+            /* Float bei Paragraphen lässt die Elemente sich wie ein Inhalt von einem nachfolgenenden Element verhalten */
             float: left;
-            /* float: right; */
+            /* float: right;  */ /* auch die Reihenfolge ist getauscht */
         }
-        h2 {
+
+        p::after{
             clear: both;
         }
+
+        /* h2 {
+            
+        } */
     </style>
 </head>
 <body>
