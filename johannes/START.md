@@ -4,45 +4,45 @@
 
 ## M00 | WARMING UP
 
-- [ ] Greeter
-- [ ] VS Code
-- [ ] Git & GitHub
+- [x] Greeter
+- [x] VS Code
+- [x] Git & GitHub
 
 ## M01 | HTML GETTING STARTED
 
-- [ ] [HTML.md getting started](./theory-app/slides/HTML.md#html--getting-started)
-- [ ] [html-helloworld.html](./theory-app/html-helloworld.html) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
-- [ ] browser developer tools > elements
+- [x] [HTML.md getting started](./theory-app/slides/HTML.md#html--getting-started)
+- [x] [html-helloworld.html](./theory-app/html-helloworld.html) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
+- [x] browser developer tools > elements
 
 ## M02 | CSS GETTING STARTED
 
-- [ ] [CSS.md getting started](./theory-app/slides/CSS.md#css--getting-started)
-- [ ] [css-helloworld.css](./theory-app/css-helloworld.css) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
-- [ ] browser developer tools > style
+- [x] [CSS.md getting started](./theory-app/slides/CSS.md#css--getting-started)
+- [x] [css-helloworld.css](./theory-app/css-helloworld.css) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
+- [x] browser developer tools > style
 
 ## M03 | JS GETTING STARTED
 
-- [ ] [JS.md getting started](./theory-app/slides/JS.md#js--getting-started)
-- [ ] [js-helloworld.js](./theory-app/js-helloworld.js) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
-- [ ] browser developer tools > console
+- [x] [JS.md getting started](./theory-app/slides/JS.md#js--getting-started)
+- [x] [js-helloworld.js](./theory-app/js-helloworld.js) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
+- [x] browser developer tools > console
 
 ## M04 | HTML SYNTAX
 
-- [ ] [HTML.md - HTML Syntax](./theory-app/slides/HTML.md#html--syntax)
-- [ ] [html-entities.html](./theory-app/html-entities.html)
-- [ ] [html-tags.html](./theory-app/html-tags.html)
-- [ ] [html-syntax.html](./theory-app/html-syntax.html)
-- [ ] [html-attributes-global.html](./theory-app/html-attributes-global.html)
+- [x] [HTML.md - HTML Syntax](./theory-app/slides/HTML.md#html--syntax)
+- [x] [html-entities.html](./theory-app/html-entities.html)
+- [x] [html-tags.html](./theory-app/html-tags.html)
+- [x] [html-syntax.html](./theory-app/html-syntax.html)
+- [x] [html-attributes-global.html](./theory-app/html-attributes-global.html)
 
 ## Übung: Homepage mit verlinkten Unterseiten
 
 ## M05 | CSS SYNTAX
 
-- [ ] [CSS.md - CSS Syntax](./theory-app/slides/CSS.md#css--syntax)
-- [ ] [css-syntax.css](./theory-app/css-syntax.css)
-- [ ] [css-properties.html](./theory-app/css-properties.html)
-- [ ] [css-selectors.html](./theory-app/css-selectors.html)
-- [ ] [css-units.html](./theory-app/css-units.html)
+- [x] [CSS.md - CSS Syntax](./theory-app/slides/CSS.md#css--syntax)
+- [x] [css-syntax.css](./theory-app/css-syntax.css)
+- [x] [css-properties.html](./theory-app/css-properties.html)
+- [x] [css-selectors.html](./theory-app/css-selectors.html)
+- [x] [css-units.html](./theory-app/css-units.html)
 
 ## M06 | JS SYNTAX
 
