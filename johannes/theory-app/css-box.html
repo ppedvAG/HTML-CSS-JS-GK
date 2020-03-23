@@ -9,12 +9,14 @@
             border: 50px double;
             padding: 10px;
             /* margin oben und unten überlappen sich */
-            margin: 10px;
-            height: 100px;
-            width: 100px;
-            box-sizing: content-box; /* default */
+            margin: 10px; 
+            height: 100px; /* funktioniert nur bei Block Elementen */
+            width: 100px; /* funktioniert nur bei Block Elementen */
+            /* box sizing gibt an, wie die Breite und Höhe berechnet werden sollen:
+            ob es nur am Inhalt oder an der kompletten Box angewendet wird*/
+            box-sizing: content-box; /* default */ /* wende größe nur am Inhalt an*/
             /* wenn die gleiche css eigenschaft mehrmals Werte bekommt, der letzte Wert gewinnt */
-            box-sizing: border-box; /* default */
+            box-sizing: border-box; /* default */ /* wende größe an der Box inklusive Rahmen an an*/
         }
         body {
             /* default wert bei body ist margin: 8px */

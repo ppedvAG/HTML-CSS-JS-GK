@@ -55,19 +55,21 @@
 - [x] CSS Emmet
 - [x] ES Snippets
 
-## M0 | HTML CONTINUED
+## M08 | HTML CONTINUED
 
 - [x] Content Types
 - [x] [html-lists.html](./theory-app/html-lists.html)
 - [x] [html-table.html](./theory-app/html-tables.html)
-- [ ] Daten strukturieren - HTML Tabellen & Listen
+
+## M09 | CSS CONTINUED
+
+- [x] [css-box.html](theory-app/css-box.html)
+- [x] [css-inline-block.html](theory-app/css-inline-block.html)
+- [ ] Floating
+
+
 - [ ] Navigation einer Webseite
 - [ ] Inhalt gruppieren - Sectioning, Headings & Co
-
-## M0 | CSS CONTINUED
-
-css-box.html
-
 - [ ] Display: block (so breit wie möglich), inline (so breit wie nötig), table, list
 - [ ] Spezifität
 - [ ] Pseudo-Klassen & -Elemente
@@ -105,7 +107,6 @@ js-forms.html
 ## M0 | CSS INTERMEDIATE
 
 - [ ] Position
-- [ ] Floating
 - [ ] Display: grid
 - [ ] Display: flex
 - [ ] Column-Count
