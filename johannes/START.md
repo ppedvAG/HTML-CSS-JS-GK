@@ -59,6 +59,7 @@
 ## M0 | HTML CONTINUED
 
 - [x] Content Types
+- [ ] [html-lists.html](./theory-app/html-lists.html)
 - [ ] Daten strukturieren - HTML Tabellen & Listen
 - [ ] Navigation einer Webseite
 - [ ] Inhalt gruppieren - Sectioning, Headings & Co
