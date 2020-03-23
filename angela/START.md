@@ -54,11 +54,8 @@ js-start.html
 
 ## M06 | JS SYNTAX
 
-- [ ] Primitive Datentypen
-- [ ] Variablen
-- [ ] Operatoren
-- [ ] Ausdrücke & Anweisungen
-- [ ] Gültigkeitsbereiche
+- [X] Ausdrücke & Anweisungen
+- [X] [js-syntax.js](./theory-app/js-syntax.js)
 
 ## M07 | CODE SNIPPETS
 
@@ -84,7 +81,10 @@ css-box.html
 - [ ] Variable Fonts
 
 ## M0 | JS CONTINUED
-
+- [ ] Primitive Datentypen
+- [ ] Variablen
+- [ ] Operatoren
+- [ ] Gültigkeitsbereiche
 - [ ] Globales Objekt - window
 - [ ] Objekt-Typen
 - [ ] Datenstrukturen
