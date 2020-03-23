@@ -28,29 +28,34 @@
 
 ## M04 | HTML SYNTAX
 
-- [ ] [HTML.md - HTML Syntax](./theory-app/slides/HTML.md#html--syntax)
-- [ ] [html-entities.html](./theory-app/html-entities.html)
-- [ ] [html-tags.html](./theory-app/html-tags.html)
-- [ ] [html-syntax.html](./theory-app/html-syntax.html)
-- [ ] [html-attributes-global.html](./theory-app/html-attributes-global.html)
+- [X] [HTML.md - HTML Syntax](./theory-app/slides/HTML.md#html--syntax)
+- [X] [html-entities.html](./theory-app/html-entities.html)
+- [X] [html-tags.html](./theory-app/html-tags.html)
+- [X] [html-syntax.html](./theory-app/html-syntax.html)
+- [X] [html-attributes-global.html](./theory-app/html-attributes-global.html)
 
 ## Übung: Homepage mit verlinkten Unterseiten
 
+index.html
+index.css
+index.js
+
+html-start.html
+css-start.html
+js-start.html
+
 ## M05 | CSS SYNTAX
 
-- [ ] [CSS.md - CSS Syntax](./theory-app/slides/CSS.md#css--syntax)
-- [ ] [css-syntax.css](./theory-app/css-syntax.css)
-- [ ] [css-properties.html](./theory-app/css-properties.html)
-- [ ] [css-selectors.html](./theory-app/css-selectors.html)
-- [ ] [css-units.html](./theory-app/css-units.html)
+- [X] [CSS.md - CSS Syntax](./theory-app/slides/CSS.md#css--syntax)
+- [X] [css-syntax.css](./theory-app/css-syntax.css)
+- [X] [css-properties.html](./theory-app/css-properties.html)
+- [X] [css-selectors.html](./theory-app/css-selectors.html)
+- [X] [css-units.html](./theory-app/css-units.html)
 
 ## M06 | JS SYNTAX
 
-- [ ] Primitive Datentypen
-- [ ] Variablen
-- [ ] Operatoren
-- [ ] Ausdrücke & Anweisungen
-- [ ] Gültigkeitsbereiche
+- [X] Ausdrücke & Anweisungen
+- [X] [js-syntax.js](./theory-app/js-syntax.js)
 
 ## M07 | CODE SNIPPETS
 
@@ -76,7 +81,10 @@ css-box.html
 - [ ] Variable Fonts
 
 ## M0 | JS CONTINUED
-
+- [ ] Primitive Datentypen
+- [ ] Variablen
+- [ ] Operatoren
+- [ ] Gültigkeitsbereiche
 - [ ] Globales Objekt - window
 - [ ] Objekt-Typen
 - [ ] Datenstrukturen
