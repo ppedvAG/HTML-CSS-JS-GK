@@ -49,7 +49,6 @@
 - [x] Ausdrücke & Anweisungen
 - [x] [js-syntax.js](./theory-app/js-syntax.js)
 
-
 ## M07 | CODE SNIPPETS
 
 - [x] [html-emmet.html](./theory-app/html-emmet.html)
@@ -59,7 +58,8 @@
 ## M0 | HTML CONTINUED
 
 - [x] Content Types
-- [ ] [html-lists.html](./theory-app/html-lists.html)
+- [x] [html-lists.html](./theory-app/html-lists.html)
+- [x] [html-table.html](./theory-app/html-tables.html)
 - [ ] Daten strukturieren - HTML Tabellen & Listen
 - [ ] Navigation einer Webseite
 - [ ] Inhalt gruppieren - Sectioning, Headings & Co
@@ -68,7 +68,7 @@
 
 css-box.html
 
-- [ ] Display: block, inline, table, list
+- [ ] Display: block (so breit wie möglich), inline (so breit wie nötig), table, list
 - [ ] Spezifität
 - [ ] Pseudo-Klassen & -Elemente
 - [ ] Animationen & Transitions
