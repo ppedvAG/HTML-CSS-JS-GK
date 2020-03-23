@@ -78,16 +78,22 @@ commited
 
 ## M08 | HTML CONTINUED
 
-- [x] Content Types
+- [x] Content Types (Flow)
 - [x] [html-lists.html](./theory-app/html-lists.html)
 - [x] [html-tables.html](./theory-app/html-tables.html)
 
 ## M09 | CSS CONTINUED
 
 - [x] [css-box.html](./theory-app/css-box.html)
-- [ ] [css-inline-block.html](./theory-app/css-inline-block.html)
-- [ ] Floating
+- [x] [css-inline-block.html](./theory-app/css-inline-block.html)
+- [ ] [css-float.html](./theory-app/css-float.html)
 
+## Übung:
+
+- nav
+- die Links (oder Eltern davon) sollen Größenangaben (width, height) akzeptieren
+- float
+- bei :hover andere Hintergrund- und evtl. Schriftfarbe
 
 - [ ] Navigation einer Webseite
 - [ ] Inhalt gruppieren - Sectioning, Headings & Co

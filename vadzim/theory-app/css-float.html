@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,37 @@
     <style>
         * {
             border: thin solid;
-            background-color:springgreen;
+            background-color: springgreen;
         }
+
         p {
+            /* 1. block-elemente werden zu inline-elementen */
             float: left;
             /* float: right; */
+            /* auch die Reihenfolge ist getauscht */
+            /* 2. lässt die Elemente wie Inhalt von einem nachfolgenden Element verhalten */
         }
+
+        /* 
+        Wenn sich das Nachfolgende Element von gefloateten Element komisch verhält, 
+        die float-Eigenschaft soll irgendwo unterbrochen werden (gecleart):
+        entweder am nächsten Element oder
+        am Elternelement */
+
+        /* clearen beim nächsten El */
         h2 {
+            clear: both;
+        }
+
+        /* clearen beim Elternelement */
+        #clearfix::after {
+            content: "";
+            display: table;
             clear: both;
         }
     </style>
 </head>
+
 <body>
 
     <p>paragraph1</p>
@@ -27,11 +48,22 @@
     <p>paragraph5</p>
     <p>paragraph6</p>
 
-    <h2>Heading</h2><h2>Heading</h2>
+    <h2>Heading</h2>
+    <h2>Heading</h2>
 
+    <div id="clearfix">
+        <p>paragraph1</p>
+        <p>paragraph2</p>
+        <p>paragraph3</p>
+        <p>paragraph4</p>
+        <p>paragraph5</p>
+        <p>paragraph6</p>
+    </div>
+    <h3>H3</h3>
     <pre>
         floating wird oft bei Navigationen eingesetzt
     </pre>
-    
+
 </body>
+
 </html>
