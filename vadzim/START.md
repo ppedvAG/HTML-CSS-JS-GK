@@ -63,10 +63,12 @@ Es muss die Möglichkeit geben, unter den 4 html-Dateien hin und her zu navigier
 das erste Kind von body soll ein container sein.
 Durch diesen Container wird der Abstand zum Browser-Rand beeinflusst.
 
+commited
+
 ## M06 | JS SYNTAX
 
-- [ ] Ausdrücke & Anweisungen
-- [ ] [js-syntax.js]()
+- [x] Ausdrücke & Anweisungen
+- [x] [js-syntax.js](./theory-app/js-syntax.js)
 
 ## M07 | CODE SNIPPETS
 
