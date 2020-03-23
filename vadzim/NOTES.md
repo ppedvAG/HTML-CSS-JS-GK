@@ -1,7 +1,5 @@
 # NOTIZEN VON VADZIM
 
-änderung test
-
 ## TEXT EDITORS SHORTCUTS
 
 Bemerkung: Page (wie auf den Tasten PageUp und PageDown) ist Anzahl von Zeilen, die im Moment in das Viewport passen
@@ -57,6 +55,8 @@ git config --global user.email "yourGit(Hub)Email"
 
 | shortcut | effect |
 | --- | --- |
+| `shift alt a` | comment / uncomment |
+| `shift alt f` | format |
 | `ctrl l` | select line |
 | `shift alt up/down` | duplicate line or selection |
 | `ctrl c ctrl v` | duplicate line |
@@ -65,9 +65,7 @@ git config --global user.email "yourGit(Hub)Email"
 | `ctrl leftclick` | go to definition |
 | `ctrl ö` | open terminal |
 | `ctrl space` | force intellisense |
-| `shift alt a` | comment / uncomment |
 | `ctrl #` | comment / uncomment |
-| `shift alt f` | format |
 | `ctrl k s` | save all |
 | `alt b` | open in browser |
 | `f12` | go to definition |
