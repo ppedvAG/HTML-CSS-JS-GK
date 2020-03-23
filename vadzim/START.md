@@ -4,8 +4,8 @@
 
 ## M00 | WARMING UP
 
-- [ ] Greeter
-- [ ] VS Code
+- [x] Greeter
+- [x] VS Code
 - [ ] Git & GitHub
 
 ## M01 | HTML GETTING STARTED
