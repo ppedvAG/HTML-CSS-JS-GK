@@ -1,6 +1,7 @@
 let myString = 'HochkommaString'
 let stringMitHTML = '<b>bold text</b>'
 
+console.log('text');
 /* document.getElementById('par_iT').innerText = myString // HochkommaString
 document.getElementById('par_iH').innerHTML = myString // HochkommaString
 document.getElementById('out_v').value = myString // HochkommaString */
