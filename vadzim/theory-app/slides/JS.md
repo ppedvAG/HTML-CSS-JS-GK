@@ -130,3 +130,11 @@ PREPARATION REMARKS
  -->
 
 [zurück zu START.md (vscode link)](../../START.md#m03--js-getting-started)
+
+## JS > SYNTAX
+
+## JS > DATA TYPES, LITERALS, CASTING
+
+## JS > DEBUGGING
+
+## JS > FLOW CONTROL

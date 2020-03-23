@@ -30,29 +30,43 @@ text
 
 ## M04 | HTML SYNTAX
 
-- [ ] [HTML.md - HTML Syntax](./theory-app/slides/HTML.md#html--syntax)
-- [ ] [html-entities.html](./theory-app/html-entities.html)
-- [ ] [html-tags.html](./theory-app/html-tags.html)
-- [ ] [html-syntax.html](./theory-app/html-syntax.html)
-- [ ] [html-attributes-global.html](./theory-app/html-attributes-global.html)
+- [x] [HTML.md - HTML Syntax](./theory-app/slides/HTML.md#html--syntax)
+- [x] [html-entities.html](./theory-app/html-entities.html)
+- [x] [html-tags.html](./theory-app/html-tags.html)
+- [x] [html-syntax.html](./theory-app/html-syntax.html)
+- [x] [html-attributes-global.html](./theory-app/html-attributes-global.html)
 
 ## Übung: Homepage mit verlinkten Unterseiten
 
+index.html
+index.css
+index.js
+
+html-start.html
+css-start.html
+js-start.html
+
+Es muss die Möglichkeit geben, unter den 4 html-Dateien hin und her zu navigieren.
+
+<!-- <a href=""></a> -->
+
 ## M05 | CSS SYNTAX
 
-- [ ] [CSS.md - CSS Syntax](./theory-app/slides/CSS.md#css--syntax)
-- [ ] [css-syntax.css](./theory-app/css-syntax.css)
-- [ ] [css-properties.html](./theory-app/css-properties.html)
-- [ ] [css-selectors.html](./theory-app/css-selectors.html)
-- [ ] [css-units.html](./theory-app/css-units.html)
+- [x] [CSS.md - CSS Syntax](./theory-app/slides/CSS.md#css--syntax)
+- [x] [css-syntax.css](./theory-app/css-syntax.css)
+- [x] [css-properties.html](./theory-app/css-properties.html)
+- [x] [css-selectors.html](./theory-app/css-selectors.html)
+- [x] [css-units.html](./theory-app/css-units.html)
+
+## Übung2
+
+das erste Kind von body soll ein container sein.
+Durch diesen Container wird der Abstand zum Browser-Rand beeinflusst.
 
 ## M06 | JS SYNTAX
 
-- [ ] Primitive Datentypen
-- [ ] Variablen
-- [ ] Operatoren
 - [ ] Ausdrücke & Anweisungen
-- [ ] Gültigkeitsbereiche
+- [ ] [js-syntax.js]()
 
 ## M07 | CODE SNIPPETS
 
@@ -79,6 +93,10 @@ css-box.html
 
 ## M0 | JS CONTINUED
 
+- [ ] Primitive Datentypen
+- [ ] Variablen
+- [ ] Operatoren
+- [ ] Gültigkeitsbereiche
 - [ ] Globales Objekt - window
 - [ ] Objekt-Typen
 - [ ] Datenstrukturen
