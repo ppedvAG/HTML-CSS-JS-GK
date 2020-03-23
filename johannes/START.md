@@ -4,19 +4,19 @@
 
 ## M00 | WARMING UP
 
-- [ ] Greeter
-- [ ] VS Code
-- [ ] Git & GitHub
+- [x] Greeter
+- [x] VS Code
+- [x] Git & GitHub
 
 ## M01 | HTML GETTING STARTED
 
-- [ ] [HTML.md getting started](./theory-app/slides/HTML.md#html--getting-started)
-- [ ] [html-helloworld.html](./theory-app/html-helloworld.html) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
-- [ ] browser developer tools > elements
+- [x] [HTML.md getting started](./theory-app/slides/HTML.md#html--getting-started)
+- [x] [html-helloworld.html](./theory-app/html-helloworld.html) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
+- [x] browser developer tools > elements
 
 ## M02 | CSS GETTING STARTED
 
-- [ ] [CSS.md getting started](./theory-app/slides/CSS.md#css--getting-started)
+- [x] [CSS.md getting started](./theory-app/slides/CSS.md#css--getting-started)
 - [ ] [css-helloworld.css](./theory-app/css-helloworld.css) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
 - [ ] browser developer tools > style
 
