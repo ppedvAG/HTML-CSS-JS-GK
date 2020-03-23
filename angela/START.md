@@ -6,25 +6,25 @@
 
 - [x] Greeter
 - [X] VS Code
-- [ ] Git & GitHub
+- [X] Git & GitHub
 
 ## M01 | HTML GETTING STARTED
 
-- [ ] [HTML.md getting started](./theory-app/slides/HTML.md#html--getting-started)
-- [ ] [html-helloworld.html](./theory-app/html-helloworld.html) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
-- [ ] browser developer tools > elements
+- [X] [HTML.md getting started](./theory-app/slides/HTML.md#html--getting-started)
+- [X] [html-helloworld.html](./theory-app/html-helloworld.html) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
+- [X] browser developer tools > elements
 
 ## M02 | CSS GETTING STARTED
 
-- [ ] [CSS.md getting started](./theory-app/slides/CSS.md#css--getting-started)
-- [ ] [css-helloworld.css](./theory-app/css-helloworld.css) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
-- [ ] browser developer tools > style
+- [X] [CSS.md getting started](./theory-app/slides/CSS.md#css--getting-started)
+- [X] [css-helloworld.css](./theory-app/css-helloworld.css) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
+- [X] browser developer tools > style
 
 ## M03 | JS GETTING STARTED
 
-- [ ] [JS.md getting started](./theory-app/slides/JS.md#js--getting-started)
-- [ ] [js-helloworld.js](./theory-app/js-helloworld.js) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
-- [ ] browser developer tools > console
+- [X] [JS.md getting started](./theory-app/slides/JS.md#js--getting-started)
+- [X] [js-helloworld.js](./theory-app/js-helloworld.js) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
+- [X] browser developer tools > console
 
 ## M04 | HTML SYNTAX
 
