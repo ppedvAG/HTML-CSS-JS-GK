@@ -106,16 +106,28 @@ commited
 ## M11 | JS CONTINUED
 
 - [x] [vars, identifiers, scopes](./theory-app/js-variables-identifiers-scopes.html)
-- [ ] Primitive Datentypen
+- [x] [primitives js-datatypes.html](./theory-app/js-datatypes.html)
 - [ ] Operatoren
-- [ ] Gültigkeitsbereiche
-- [ ] Globales Objekt - window
-- [ ] Objekt-Typen
+- [x] [global object window](./theory-app/js-window.html)
+- [x] Kontrollstrukturen
+- [x] [js-Math.html](./theory-app/js-Math.html)
+
+## Übung: Eine Zufallszahl erraten
+
+- eine Zufallszahl von 3 möglichen generieren (0, 1, 2) / (1, 2, 3)
+- bei jedem Versuch soll dem/r Benutzer/in mitgeteilt werden, ob die Zufallszahl kleiner/größer ist oder ob er/sie sie erraten hat
+- [x] [ueb-zufallszahl.html](./theory-app/ueb-zufallszahl.html)
+
+## M12 | JS
+
+- [x] [js-switch.html](./theory-app/js-switch.html)
+- [x] [js-Date.html](./theory-app/js-Date.html)
+- [x] Funktionen
+- [x] [js-arrowfunction.html](./theory-app/js-arrowfunction.html)
+  
 - [ ] Datenstrukturen
-- [ ] Kontrollstrukturen
-- [ ] Funktionen
+- [ ] Objekt-Typen
 - [ ] Konstruktoren
-- [ ] date object
 
 ## M0 | DOM INTRO
 
