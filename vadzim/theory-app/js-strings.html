@@ -43,6 +43,7 @@
         <output id="o12_v_HS"></output>
         <hr>
         <h4>p.innerText & escapes</h4>
+        <p>innerText erkennt Escape-Zeichen (\t ...) </p>
         <p id="o12_iT_es"></p>
         <h4>p.innerHTML & escapes</h4>
         <p id="o12_iH_es"></p>
@@ -63,8 +64,9 @@
 
         <h3>2.2. mit new</h3>
         <pre>
-
+            let myString22 = new String('blabla');   
         </pre>
+        <p id="output22"></p>
         <hr>
     </section>
 
@@ -157,7 +159,7 @@
         o12_v_HS.value = str_12_HS
         console.log('str_12_HS :', str_12_HS)
 
-        let str_12_es = 'zeile1 \n zeile2'
+        let str_12_es = 'zeile1 \n zeile2' 
         o12_iT_es.innerText = str_12_es
         o12_iH_es.innerHTML = str_12_es
         o12_v_es.value = str_12_es
@@ -168,7 +170,9 @@
 
         //#region 2.
         let myString21 = String('blabla');
-        output21.innerText = myString21;
+        output21.innerText = typeof myString21;
+        let myString22 = new String('blabla');
+        output22.innerText = typeof myString22;
         //#endregion 2.
 
 
@@ -195,30 +199,38 @@
         console.log("'4'===4 :", '4' === 4); // false, weil auch die Datentypen verglichen wurden
 
 
+        /* "Eine Zeichenkette zum Austesten von String-Methoden." */
+
         //charAt(number)
-        output1.innerText = myString.charAt(5);
+        output1.innerText = myString.charAt(5); // Z
 
         //indexOf()
-        output2.innerText = "";
+        output2.innerText = myString.indexOf('ß'); // -1
+
         //lastIndex()
-        output3.innerText = "";
+        output3.innerText = myString.lastIndexOf('n')
 
         //slice()
-        output4.innerText = "";
+        output4.innerText = myString.slice(10, 34) // enkette zum Austesten vo
+        // output4.innerText = myString.slice(34, 10) // fkt nicht
 
         //split()
-        output5.innerText = myString.split('Z');
-        console.log('typeof myString.split("Z") :', typeof (myString.split('Z'))); // object
+        let rw = myString.split('Z');
+        output5.innerText = rw
+        console.log('rw :', rw); // Array(2) 
         console.log('myString.split("Z") :', myString.split('Z')); // array mit 2 strings
         console.log('myString nach split:', myString); // wert der variable hat sich nicht geändert
 
         //substr()
-        output6.innerText = myString.substr(0, myString.length - 3);
+        /* arg1: von .index.; arg2: wie viel .number. */
+        output6.innerText = myString.substr(10, 34); // enkette zum Austesten von String-M
 
         //toLowerCase()
         output7.innerText = "";
+        
         //toUpperCase()
         output8.innerText = "";
+
         //concat()
         output9.innerText = "";
 
