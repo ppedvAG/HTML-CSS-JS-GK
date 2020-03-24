@@ -65,10 +65,16 @@
 
 - [x] [css-box.html](theory-app/css-box.html)
 - [x] [css-inline-block.html](theory-app/css-inline-block.html)
-- [ ] Floating
+- [ ] [css-float.html](theory-app/css-float.html)
 
+## Übung: Navigation einer **Webseite**
+- nav
+- die Links (oder Eltern davon) sollen Größenangaben akzeptieren
+- float
+- bei :hover andere Backgroundcolor
 
-- [ ] Navigation einer Webseite
+commited
+
 - [ ] Inhalt gruppieren - Sectioning, Headings & Co
 - [ ] Display: block (so breit wie möglich), inline (so breit wie nötig), table, list
 - [ ] Spezifität

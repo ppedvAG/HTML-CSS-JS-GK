@@ -1,3 +1,37 @@
 .container {
     margin: 5em;
 }
+
+nav {
+    height: 50px;
+    font-weight: bold;
+}
+
+nav ul {
+    /* Punkte vor li entfernen */
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+    height: 5em;
+}
+
+nav a {
+    /* Unterstrich bei Anker-Links entfernen */
+    text-decoration: none;
+    display: inline-block;
+    padding: .5em;
+    color: black;
+    margin: 0;
+}
+
+li a:hover {
+    color: white;
+    background-color: chocolate;
+}
+
+h1 {
+    clear: both;
+}
