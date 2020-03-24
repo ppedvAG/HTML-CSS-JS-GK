@@ -63,36 +63,45 @@ js-start.html
 - [ ] CSS Emmet
 - [X] ES Snippets
 
-## M0 | HTML CONTINUED
+## M08 | HTML CONTINUED
 
 - [X] Content Types
-- [ ] Daten strukturieren - HTML Tabellen & Listen
-- [ ] Navigation einer Webseite
-- [ ] Inhalt gruppieren - Sectioning, Headings & Co
+- [X] [html-lists.html](./theory-app/html-lists.html)
+- [X] [html-tables.html](./theory-app/html-tables.html)
 
+## M09 | CSS CONTINUED
 
-## M0 | CSS CONTINUED
+- [x] [css-box.html](./theory-app/css-box.html)
+- [X] [css-inline-block.html](./theory-app/css-inline-block.html)
+- [X] [csss-float.html](./theory-app/css-float.html)
+- [X] Navigation einer Webseite
 
-css-box.html
+## M10 | HTML SECTIONING, TABLES, LISTS, PSEUDO
 
-- [ ] Display: block, inline, table, list
-- [ ] Spezifität
-- [ ] Pseudo-Klassen & -Elemente
-- [ ] Animationen & Transitions
-- [ ] Variable Fonts
+- [x] Inhalt gruppieren - Sectioning, Headings & Co
+- [x] Display: block, inline, table, list
+- [x] Pseudo-Klassen & -Elemente
 
-## M0 | JS CONTINUED
-- [ ] Primitive Datentypen
-- [ ] Variablen
+## M11 | JS CONTINUED
+- [X] [vars, identifiers, scopes](./theory-app/js-variables-identifiers-scopes.html)
+- [X] [primitives js-datatypes](./theory-app/js-datatypes.html)
 - [ ] Operatoren
-- [ ] Gültigkeitsbereiche
-- [ ] Globales Objekt - window
+- [X] [global object window](./theory-app/js-window.html)
+- [X] Kontrollstrukturen
+- [X] [js-math.html](./theory-app/js-Math.html)
+
+## Übung: Eine Zufallszahl erraten
+[ueb-zufallszahl.html](./theory-app/ueb-zufallszahl.html)
+
+## M12 | JS
+
+- [X] [js-switch.html](./theory-app/js-switch.html)
+- [X] [js-Date.html](./theory-app/js-Date.html)
+- [X] Funktionen
+- [X] [js-arrowfunction.html](./theory-app/js-arrowfunction.html)
 - [ ] Objekt-Typen
 - [ ] Datenstrukturen
-- [ ] Kontrollstrukturen
-- [ ] Funktionen
 - [ ] Konstruktoren
-- [ ] date object
 
 ## M0 | DOM INTRO
 
@@ -111,12 +120,15 @@ js-forms.html
 ## M0 | CSS INTERMEDIATE
 
 - [ ] Position
-- [ ] Floating
+
 - [ ] Display: grid
 - [ ] Display: flex
 - [ ] Column-Count
 - [ ] Media Queries & Breakpoints
 - [ ] CSS Funktionen
+- [ ] Animationen & Transitions
+- [ ] Variable Fonts
+- [ ] Spezifität
 
 ## M0 | JS INTERMEDIATE
 

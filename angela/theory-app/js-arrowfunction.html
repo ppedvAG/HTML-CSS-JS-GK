@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS arrowfunction</title>
+</head>
+<body>
+    <h1>JS ArrowFCT</h1>
+
+    <input type="text" oninput="console.log('this.value :', this.value)">
+    <input type="text" oninput="{(() => console.log('this.value :', this.value))()}">
+
+    <pre>
+        Pfeilfunktionen lösen das Problem von this in JS
+    </pre>
+    
+    <button onclick="setInterval(zaehleSekunden,1000)">classic-timer</button>
+    <button onclick="setInterval(() => {
+        this.innerText += '+1'
+        console.log('this from arrow timer :', this);
+    },1000)">arrow-timer</button>
+
+    <script>
+    function zaehleSekunden(){
+        this.innerText += '+1' //this bezieht sich auf window
+        console.log('this from classic timer:', this);
+    }     
+
+    </script>
+    
+</body>
+</html>
