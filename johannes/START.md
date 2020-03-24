@@ -112,13 +112,13 @@ commited
 - die Bilder aus einer HTML-Datei
 - mit Klick auf den Button werden die Bilder vergrößert
 - [x] [ueb-bilderzoom.html](theory-app/ueb-bilderzoom.html)
-- [ ] Objekt-Typen
+
+## M13 | JS OBJECTS
+
+- [x] [js-objects.html](theory-app/js-objects.html)
 
 ## M0 | DOM INTRO
 
-- [ ] Spezifität
-- [ ] Animationen & Transitions
-- [ ] Variable Fonts
 - [ ] Zusammenhang zwischen DOM, HTML, CSS & JS
 - [ ] DOM Knoten & Elemente
 - [ ] Events
@@ -133,6 +133,9 @@ js-forms.html
 
 ## M0 | CSS INTERMEDIATE
 
+- [ ] Spezifität
+- [ ] Animationen & Transitions
+- [ ] Variable Fonts
 - [ ] Position
 - [ ] Display: grid
 - [ ] Display: flex
