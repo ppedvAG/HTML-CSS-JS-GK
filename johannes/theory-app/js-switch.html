@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS SWITCH</title>
+</head>
+<body>
+    <h1>JS SWITCH</h1>
+    <p>Zu jedem Wochentag gibt es ein unterschiedliches Tagesangebot</p>
+
+    <select name="sel_WT" id="sel" onchange="gibAngebot(+this.value)">
+        <option value="1">Montag</option>
+        <option value="2">Dienstag</option>
+        <option value="3">Mittwoch</option>
+        <option value="4">Donnerstag</option>
+        <option value="5">Freitag</option>
+        <option value="6">Samstag</option>
+        <option value="0">Sonntag</option>
+    </select>
+
+    <p id=out_angebot></p>
+
+    <script>
+        let myDateObject = new Date()
+        let myWeekday = myDateObject.getDay()
+        gibAngebot(myWeekday)
+
+        /* Den heutigen Wochentag ermitteln und automatisch Angebot anzeigen */
+        //+document.getElementById('sel').value; // +format
+
+        function gibAngebot(tag){
+            switch (tag) {
+                case 1:
+                out_angebot.innerText ="Pizza"
+                    break;
+                case 2:
+                out_angebot.innerText ="Griechischer Salat"
+                    break;
+                case 3:
+                out_angebot.innerText ="Pilzpfanne"
+                    break;
+                case 4:
+                out_angebot.innerText ="Bockwurst mit Salzkartoffeln"
+                    break;
+                case 5:
+                out_angebot.innerText ="Burger mit Pommer"
+                    break;
+                case 6:
+                out_angebot.innerText ="alle Speisen mit 20% Rabatt"
+                    break;
+                case 0:
+                out_angebot.innerText ="Lieferdienst"
+                    break;
+            }
+            // functionen können mit return einen Wert zurückgeben
+        }
+    </script>
+</body>
+</html>
