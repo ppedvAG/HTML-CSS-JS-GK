@@ -69,12 +69,14 @@
         function test2Fct1() {
             var2 = 5
             var var3 = 5
+            // obwohl Variablen mit den Schlüsselwort var global sein sollen,
+            // ist diese Variable in einer anderen Funktion undefined
         }
         
         test2Fct1()
         function test2Fct2() {
                 console.log('var2 : ', var2) // wenn man test2Fct1 nicht aufruft, dann ist auch diese Variable not defined (manche Quellen behaupten: Variablen ohne Keyword, sind global sichtbar sogar wenn sie innerhalb von Funktionen deklariert sind)
-                console.log('var3 : ', var3) // var3 is not defined
+                //console.log('var3 : ', var3) // var3 is not defined
         }
         // debugger 
         
