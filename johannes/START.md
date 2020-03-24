@@ -104,8 +104,11 @@ commited
 - [x] [js-Date.html](theory-app/js-Date.html)
 - [x] Funktionen
 - [x] [js-arrowfunction.html](theory-app/js-arrowfunction.html)
-- [ ] Objekt-Typen
+- [ ] [js-arrays.html](theory-app/js-arrays.html)
+- [ ] [js-strings.html]
+  
 - [ ] Datenstrukturen
+- [ ] Objekt-Typen
 - [ ] Konstruktoren
 
 ## M0 | DOM INTRO
