@@ -88,25 +88,25 @@ commited
 - [x] [css-inline-block.html](./theory-app/css-inline-block.html)
 - [ ] [css-float.html](./theory-app/css-float.html)
 
-## Übung:
+## Übung: Navigation einer Webseite
 
 - nav
 - die Links (oder Eltern davon) sollen Größenangaben (width, height) akzeptieren
 - float
 - bei :hover andere Hintergrund- und evtl. Schriftfarbe
 
-- [ ] Navigation einer Webseite
-- [ ] Inhalt gruppieren - Sectioning, Headings & Co
-- [ ] Display: block, inline, table, list
-- [ ] Spezifität
-- [ ] Pseudo-Klassen & -Elemente
-- [ ] Animationen & Transitions
-- [ ] Variable Fonts
+commited
 
-## M0 | JS CONTINUED
+## M10 | HTML SECTIONING, TABLES, LISTS, PSEUDO
 
-- [ ] Primitive Datentypen
+- [x] Inhalt gruppieren - Sectioning, Headings & Co
+- [x] Display: table, list
+- [x] Pseudo-Klassen & -Elemente
+
+## M11 | JS CONTINUED
+
 - [ ] Variablen
+- [ ] Primitive Datentypen
 - [ ] Operatoren
 - [ ] Gültigkeitsbereiche
 - [ ] Globales Objekt - window
@@ -133,6 +133,9 @@ js-forms.html
 
 ## M0 | CSS INTERMEDIATE
 
+- [ ] Spezifität
+- [ ] Animationen & Transitions
+- [ ] Variable Fonts
 - [ ] Position
 - [ ] Display: grid
 - [ ] Display: flex
