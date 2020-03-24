@@ -157,7 +157,7 @@
         o12_v_HS.value = str_12_HS
         console.log('str_12_HS :', str_12_HS)
 
-        let str_12_es = 'zeile1 \n zeile2'
+        let str_12_es = 'zeile1 \n zeile2' //escape Taste
         o12_iT_es.innerText = str_12_es
         o12_iH_es.innerHTML = str_12_es
         o12_v_es.value = str_12_es
@@ -199,20 +199,23 @@
         output1.innerText = myString.charAt(5);
 
         //indexOf()
-        output2.innerText = "";
+        output2.innerText = myString.indexOf('ß'); // -1 // ei ergibt 6
+        
         //lastIndex()
-        output3.innerText = "";
+        output3.innerText = myString.lastIndexOf('n'); //50
 
         //slice()
-        output4.innerText = "";
+        output4.innerText = myString.slice(10, 34);
 
         //split()
-        output5.innerText = myString.split('Z');
-        console.log('typeof myString.split("Z") :', typeof (myString.split('Z'))); // object
+        rw = myString.split('Z');
+        output5.innerText = rw;
+        console.log('rw :', rw); // Array(2)
         console.log('myString.split("Z") :', myString.split('Z')); // array mit 2 strings
         console.log('myString nach split:', myString); // wert der variable hat sich nicht geändert
 
         //substr()
+        /* arg1: von .index.; arg2: wieviel ab der Stelle */
         output6.innerText = myString.substr(0, myString.length - 3);
 
         //toLowerCase()

@@ -104,12 +104,15 @@ commited
 - [x] [js-Date.html](theory-app/js-Date.html)
 - [x] Funktionen
 - [x] [js-arrowfunction.html](theory-app/js-arrowfunction.html)
-- [ ] [js-arrays.html](theory-app/js-arrays.html)
-- [ ] [js-strings.html]
-  
-- [ ] Datenstrukturen
+- [x] [js-arrays.html](theory-app/js-arrays.html)
+- [x] [js-strings.html](theory-app/js-strings.html)
+
+## Übung: Bilder vergrößern
+
+- die Bilder aus einer HTML-Datei
+- mit Klick auf den Button werden die Bilder vergrößert
+- [x] [ueb-bilderzoom.html](theory-app/ueb-bilderzoom.html)
 - [ ] Objekt-Typen
-- [ ] Konstruktoren
 
 ## M0 | DOM INTRO
 
