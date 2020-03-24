@@ -31,6 +31,111 @@
         console.log('metalle :', metalle);
         console.log('metalle[3] :', metalle[3]); // undefined
 
+        let blumen = ['Rose', 'Tulpe', 'Narzisse', 'Nelke']
+
+        let rw;
+
+        //concat(array)
+        console.info('CONCAT')
+        rw = blumen.concat(['Gladiole', 'Gänseblümchen'])
+        console.log('rw :', rw); // neues Array aus 6 Elementen
+        console.log('blumen :', blumen);
+
+        //join()
+        console.info('JOIN')
+        rw = blumen.join([' | '])
+        console.log('rw :', rw); 
+        console.log('blumen :', blumen);
+        /* baut aus einem Array eine Zeichenkette mit dem Argument von join nach jedem Element */
+
+        //sort()
+        console.info('SORT')
+        rw = blumen.sort() // alphabetisch sortiert
+        console.log('rw :', rw);
+        console.log('blumen :', blumen);
+        /* gibt ein sortiertes Array zurück und ändert das Ursprungsarray */
+
+        //reverse()
+        console.info('REVERSE')
+        rw = blumen.reverse() // alphabetisch sortiert reverse
+        console.log('rw :', rw);
+        console.log('blumen :', blumen);
+        /* gibt ein sortiertes Array zurück und ändert das Ursprungsarray */
+
+        //filter()
+        console.info('FILTER')
+        rw = blumen.filter(el => el != 'Rose' && el != 'Narzisse') 
+        console.log('rw :', rw); // Array ohne Rose und Narzisse
+        console.log('blumen :', blumen); // unverändert
+
+        //toString()
+        console.info('TO STRING')
+        rw = blumen.toString() 
+        console.log('rw :', rw); // Ohne Leerzeichen, mit Komma dazwischen
+        console.log('blumen :', blumen); // unverändert
+
+        //indexOf()
+        console.info('INDEX OF')
+        rw = blumen.indexOf('Katze') // -1, weil Katze nicht im Array => Existenzprüfung
+        console.log('rw :', rw);
+        console.log('blumen :', blumen);
+
+        //shift()
+        console.info('SHIFT')
+        rw = blumen.shift() // erstes Element wird gelöscht
+        console.log('rw :', rw) // erstes Element als String
+        console.log('blumen :', blumen) // geändert!!! ["Rose", "Nelke", "Narzisse"]
+
+        //unshift()
+        console.info('UNSHIFT')
+        rw = blumen.unshift('Sonnenblume') // fügt ein Element an den Anfang hinzu
+        console.log('rw :', rw); // länge vom neuen Array
+        console.log('blumen :', blumen); // geändert!!! ["Sonnenblume", "Rose", "Nelke", "Narzisse"]
+
+        //push()
+        console.info('UNSHIFT')
+        rw = blumen.push('Frühlingsrose')
+        console.log('rw :', rw); // länge vom neuen Array
+        console.log('blumen :', blumen); // geändert!!! ["Sonnenblume", "Rose", "Nelke", "Narzisse", "Frühlingsrose"]
+
+        //pop()
+        console.info('POP')
+        rw = blumen.pop() //löscht das letzte Element des Arrays
+        console.log('rw :', rw); // letztes Element als String
+        console.log('blumen :', blumen); // geändert!!! ["Sonnenblume", "Rose", "Nelke", "Narzisse"]
+
+        //map()
+        console.info('MAP')
+        // rw = blumen.map(element => element.length) // gibt die Länge jedes Elements aus
+        rw = blumen.map(element => element.concat('-Blume')) // konkateniert -Blume an jedes Element des Arrays
+        console.log('rw :', rw); // gibt die Länge jedes Elements aus
+        console.log('blumen :', blumen); // unverändert
+
+        //slice()
+        console.info('SLICE')
+        //rw = blumen.slice(0, 2) // ausschneiden von index bis index
+        rw = blumen.slice(1,3)
+        console.log('rw :', rw); // Tulpe
+        console.log('blumen :', blumen); // unverändert
+
+        //slice()
+        console.info('Kopien von Array mit SLICE')
+        rw = blumen.slice() // kopiert das array
+        console.log('rw :', rw); 
+        console.log('blumen :', blumen);
+
+        //spread ...
+        console.info('Kopien von Array mit SPREAD')
+        rw = [...blumen]
+        console.log('rw :', rw); // gibt das Array mit den entnommenen Elementen aus
+        console.log('blumen :', blumen); // gibt das verbleibende Array aus
+
+        //splice()
+        console.info('SPLICE')
+        rw = blumen.splice(2) // schneidet ab dem Index 2 die Element ab 
+        console.log('rw :', rw); // gibt das Array mit den entnommenen Elementen aus
+        console.log('blumen :', blumen); // gibt das verbleibende Array aus
+
 </script>
 
 </body>

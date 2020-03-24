@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS WINDOW</title>
+</head>
+<body>
+    <h1>JS WINDOW</h1>
+
+    <script>
+        console.log(this)
+
+        //#############################################################
+        console.info('TEST 1: let, var & window')
+
+        let letVar ='etwas'
+        var varVar = 'etwasanderes'
+
+        console.log('window.varVar :', window.varVar)
+        console.log('window.letVar :', window.letVar);
+        
+
+        //#############################################################
+        console.info('TEST 2: event props von window')
+        window.onclick = handleWindowClick
+        /* in JS dürfen Funktionen aufgerufen werden, bevor sie definiert wurden */
+
+        function handleWindowClick(){
+            console.log('window wurde geklickt');
+        }
+
+        // alert, prompt und confirm halten den JS Code an
+        //#############################################################
+        console.info('TEST 3: methoden von window')
+        //window.alert()
+        //this.alert()
+        //alert()
+
+
+        //#############################################################
+        console.info('TEST 4: return von alert()')
+        // const alertReturn = alert('info für den benutzer')
+        // console.log('alertReturn :', alertReturn); // undefined
+
+
+        //#############################################################
+        console.info('TEST 5: return von prompt()')
+        //const promptReturn = prompt('Geben Sie Ihr Alter ein:')
+        //console.log('promptReturn:', promptReturn) //37 // null
+
+
+        //#############################################################
+        console.info('TEST 6: return von confirm()')
+        const confirmReturn = confirm('Corona ist Scheiße. Einverstanden?')
+        console.log('confirmReturn :', confirmReturn);
+
+
+    </script>
+</body>
+</html>

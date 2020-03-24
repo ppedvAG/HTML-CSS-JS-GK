@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ü ZUFALLSZAHL</title>
+</head>
+<body>
+    
+    <h1>Ü ZUFALLSZAHL</h1>
+    <p>Bitte tippen Sie eine Zahl (0, 1, 2)</p>
+
+    <input type="text" id="inp_zahl" oninput=prüfen()>
+
+    <p id="output"></p>
+
+    <!-- Browsereingaben sind immer String -->
+    <script>
+        const mathRandom = Math.floor(Math.random()*3)
+        function prüfen() {
+            if (inp_zahl.value != "") {
+            
+            console.log(mathRandom)
+            // Casten ist nur nötig bei === Dieser vergleicht auch den Datentyp 
+                if (Number(inp_zahl.value) > mathRandom) { 
+                        output.innerText = "Die Zahl ist größer als die Zufallszahl!"
+                } else if (Number(inp_zahl.value) == mathRandom) {
+                        output.innerText = "Richtig geraten :)"
+                } else {
+                        output.innerText = "Die Zahl ist kleiner als die Zufallszahl!"
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
