@@ -65,7 +65,7 @@
 
 - [x] [css-box.html](theory-app/css-box.html)
 - [x] [css-inline-block.html](theory-app/css-inline-block.html)
-- [ ] [css-float.html](theory-app/css-float.html)
+- [x] [css-float.html](theory-app/css-float.html)
 
 ## Übung: Navigation einer **Webseite**
 - nav
@@ -75,17 +75,16 @@
 
 commited
 
-- [ ] Inhalt gruppieren - Sectioning, Headings & Co
-- [ ] Display: block (so breit wie möglich), inline (so breit wie nötig), table, list
-- [ ] Spezifität
-- [ ] Pseudo-Klassen & -Elemente
-- [ ] Animationen & Transitions
-- [ ] Variable Fonts
+## M10 | HTML SECTIONING, TABLES, LIST, PSEUDO
 
-## M0 | JS CONTINUED
+- [x] Inhalt gruppieren - Sectioning, Headings & Co
+- [x] Display: block (so breit wie möglich), inline (so breit wie nötig), table, list
+- [x] Pseudo-Klassen & -Elemente
 
-- [ ] Primitive Datentypen
+## M11 | JS CONTINUED
+
 - [ ] Variablen
+- [ ] Primitive Datentypen
 - [ ] Operatoren
 - [ ] Gültigkeitsbereiche
 - [ ] Globales Objekt - window
@@ -98,6 +97,9 @@ commited
 
 ## M0 | DOM INTRO
 
+- [ ] Spezifität
+- [ ] Animationen & Transitions
+- [ ] Variable Fonts
 - [ ] Zusammenhang zwischen DOM, HTML, CSS & JS
 - [ ] DOM Knoten & Elemente
 - [ ] Events
