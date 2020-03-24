@@ -124,6 +124,8 @@ commited
 - [x] [js-Date.html](./theory-app/js-Date.html)
 - [x] Funktionen
 - [x] [js-arrowfunction.html](./theory-app/js-arrowfunction.html)
+- [x] [js-arrays.html](./theory-app/js-arrays.html)
+- [ ] [js-strings.html](./theory-app/js-strings.html)
   
 - [ ] Datenstrukturen
 - [ ] Objekt-Typen
