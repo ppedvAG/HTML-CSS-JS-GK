@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ueb-Zufallszahl</title>
+</head>
+<body>
+    <h1>Ü Zufallszahl</h1>
+    <p>Bitte tippen Sie eine Zahl (0,1,2)</p>
+    
+    <input type="text" id="inp_zahl" oninput=prüfen()>
+    <p id="Output"></p>
+
+
+    <h2>Math.radom()</h2>
+    <p id=Mrandom></p>
+
+    // Eingaben aus dem Browser sind immer strings
+    <script>
+
+        const mathRandom = Math.floor(Math.random() * 3)
+        console.log('mathRandom :', mathRandom);
+        
+        function prüfen(){
+            if(inp_zahl.value == mathRandom){
+                Output.innerText = 'Glückwunsch! Sie haben die Zahl erraten'
+            }
+            else if (inp_zahl.value <= mathRandom) {
+                Output.innerText = 'Sie liegen drunter mit der Zahl'
+            } else {
+                Output.innerText = 'Sie liegen drüber mit der Zahl'
+            }
+            /* console.log('inp_zahl: ', inp_zahl.value)
+            console.log('typeof inp_zahl.value : ', typeof inp_zahl.value) */
+        }
+    </script>
+
+</body>
+</html>

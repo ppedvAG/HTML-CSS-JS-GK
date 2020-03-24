@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Switch</title>
+</head>
+<body>
+
+    <h1>JS Switch</h1>
+    <p>Zu jedem Wochentag gibt es unterschiedliches Tagesangebot</p>
+
+    <select name="=sel_WT" id="sel_id" onchange="gibAngebot(+this.value)">
+        <option value="1">montag</option>
+        <option value="2">dienstag</option>
+        <option value="3">mittwoch</option>
+        <option value="4">donnerstag</option>
+        <option value="5">freitag</option>
+        <option value="6">samstag</option>
+        <option value="0">sonntag</option>
+    </select>
+
+    <p id="out_angebot"></p>
+
+    <script>
+        /* Den heutigen Wochentag ermitteln und automatisch Angebot anzeigen */
+        let myDateObject = new Date()
+        let ToDay = myDateObject.getDay()
+
+        gibAngebot(ToDay)        
+
+        function gibAngebot(tag){
+            //console.log('sel_id :', sel_id);
+            //switch (document.getElementById(sel_id).value) {
+            //switch (+sel_id.value) {
+            switch (tag) {
+                case 1:
+                    out_angebot.innerText = "Pizza"
+                    break;
+                case 2:
+                    out_angebot.innerText = "Hamburger"
+                    break;
+                case 3:
+                    out_angebot.innerText = "spaghetti"
+                    break;
+                case 4:
+                    out_angebot.innerText = "Ei"
+                    break;
+                case 5:
+                    out_angebot.innerText = "Kartoffeln"
+                    break;
+                case 6:
+                    out_angebot.innerText = "Salat"
+                    break;
+                case 0:
+                    out_angebot.innerText = "Brot"
+                    break;
+            
+                default:
+                    out_angebot.innerText = "Keiner Da"
+                    break;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
