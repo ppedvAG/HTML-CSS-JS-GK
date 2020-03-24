@@ -105,7 +105,7 @@ commited
 
 ## M11 | JS CONTINUED
 
-- [ ] Variablen
+- [x] [vars, identifiers, scopes](./theory-app/js-variables-identifiers-scopes.html)
 - [ ] Primitive Datentypen
 - [ ] Operatoren
 - [ ] Gültigkeitsbereiche
