@@ -9,7 +9,9 @@
 <body>
 
     <script>
+
         // Primitives & Literals
+        
         let nr = 4;
         let stringTest1 = '4';        
 
@@ -33,7 +35,7 @@
 
         let myNull = null;
         console.info('typeof myNull');
-        console.log(typeof myNull); // object
+        console.log(typeof myNull); // object (irritierend)
 
         console.info('myNull instanceof Object');
         console.log(myNull instanceof Object); // false
@@ -46,7 +48,7 @@
         console.log(typeof 'text'); // string
         console.log(typeof "text"); // string
         console.log(typeof `text`); // string
-        let stringTest = 'sfghsg' + stringTest1;
+        let stringTest = 'sfghsg' + stringTest1; // concat, konkatinieren
         console.log('stringTest :', stringTest);
         stringTest = `sfghsg ${stringTest}`;
         console.log('stringTest :', stringTest);
@@ -62,6 +64,25 @@
                 
         console.log(typeof 1); // number
         console.log(typeof 1.1); // number
+
+        let numberOrBigInt = 19007199254740992   
+        console.log('numberOrBigInt :', numberOrBigInt); // 19007199254740990
+        console.log('typeof numberOrBigInt :', typeof numberOrBigInt); // 19007199254740990
+        console.log('numberOrBigInt instanceof BigInt :', numberOrBigInt instanceof BigInt); // false
+        console.log('numberOrBigInt instanceof Number :', numberOrBigInt instanceof Number); // false
+
+        console.log('BigInt.MAX_VALUE :', BigInt.MAX_VALUE); // undefined
+        let test = BigInt(19007199254740990)
+        console.log('typeof test :', typeof test); // bigint
+        console.log('BigInt :', BigInt);
+
+        for (let prop in BigInt) {
+          console.log('prop :', prop);
+        }
+        /* 
+        *todo
+        props von BigInt ? */
+
         
         console.log(typeof true); // boolean
         console.log(typeof false); // boolean
@@ -114,7 +135,7 @@
 
         /* Strings mit anderen Datentypen */
         console.info('STRINGS MIT ANDEREN DATENTYPEN');
-
+        //toString() gibt es bei allen Datentypen und Objekten
         console.info('strings & numbers');
         console.log('"5" + 5 = ');
         console.log("5" + 5); // 55
