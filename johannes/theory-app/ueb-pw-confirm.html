@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übung PW CONFIRM</title>
+</head>
+<body>
+    <h1>Ü PW CONFIRM</h1>
+    <pre>
+        - zwei inputfelder und ein button
+        - button ist disabled
+        - beide inputs haben attribut required und minlength 4
+        - wenn die Eingabe bei den beiden inputs gleich ist und beide Felder valide sind, wird der button enabled
+    </pre>
+
+    <input id="user" type="benutzer" required minlength="4">
+    <input id="pw" type="passwort" required minlength="4">
+    <button id="formButton" disabled>Login</button>
+    <p id="p_hint"></p>
+    <script>
+        user.addEventListener('input', handleInputs)
+        pw.addEventListener('input', handleInputs)
+
+        function handleInputs() {
+            if (user.value == pw.value && user.validity.valid && pw.validity.valid ) {
+                formButton.removeAttribute('disabled')
+            } else {
+                formButton.setAttribute('disabled', true)
+                p_hint.innerText = ''
+            }
+            
+        formButton.addEventListener('click', giveHint)
+            function giveHint() {
+                p_hint.innerText = 'Passwort bestätigt'
+            }
+    }
+    </script>
+</body>
+</html>

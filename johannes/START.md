@@ -89,7 +89,7 @@ commited
 - [ ] Operatoren
 - [x] [global object window](theory-app/js-window.html)
 - [x] Kontrollstrukturen
-- [ ] [js-Math.html](theory-app/js-Math.html)
+- [x] [js-Math.html](theory-app/js-Math.html)
 
 ## Übung: Eine Zufallszahl erraten
 
@@ -117,19 +117,27 @@ commited
 
 - [x] [js-objects.html](theory-app/js-objects.html)
 
-## M0 | DOM INTRO
+## M14 | DOM INTRO
 
-- [ ] Zusammenhang zwischen DOM, HTML, CSS & JS
-- [ ] DOM Knoten & Elemente
-- [ ] Events
-- [ ] Navigieren in DOM - Traversing
+- [x] Zusammenhang zwischen DOM, HTML, CSS & JS
+- [x] Navidieren in DOM - Traversing
+- [x] [dom-traversing.html](theory-app/dom-traversing.html)
+- [x] DOM Knoten & Elemente
 
-## M0 | HTML INTERMEDIATE
+## M15 | Forms
 
-- [ ] Multimedia - Bilder, Audio, Video, Canvas
-- [ ] Formulare
+- [x] [js-forms.html](theory-app/js-forms.html)
+- [x] Events
 
-js-forms.html
+## Übung : password confirm
+
+- zwei inputfelder und ein button
+- button ist disabled
+- beide inputs haben attribut required und minlength 4
+
+- [x] [ueb-pw-confirm.html](theory-app/ueb-pw-confirm.html) 
+
+
 
 ## M0 | CSS INTERMEDIATE
 
@@ -142,6 +150,11 @@ js-forms.html
 - [ ] Column-Count
 - [ ] Media Queries & Breakpoints
 - [ ] CSS Funktionen
+
+## M0 | HTML INTERMEDIATE
+
+- [ ] Multimedia - Bilder, Audio, Video, Canvas
+- [ ] Formulare
 
 ## M0 | JS INTERMEDIATE
 
