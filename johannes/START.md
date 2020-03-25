@@ -137,7 +137,9 @@ commited
 
 - [x] [ueb-pw-confirm.html](theory-app/ueb-pw-confirm.html) 
 
+## M16 | JQUERY
 
+- [ ] [jq-docready-winload.html]
 
 ## M0 | CSS INTERMEDIATE
 
