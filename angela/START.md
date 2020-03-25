@@ -99,14 +99,26 @@ js-start.html
 - [X] [js-Date.html](./theory-app/js-Date.html)
 - [X] Funktionen
 - [X] [js-arrowfunction.html](./theory-app/js-arrowfunction.html)
-- [ ] Objekt-Typen
-- [ ] Datenstrukturen
-- [ ] Konstruktoren
+- [X] [js-arrays.html](./theory-app/js-arrays.html)
+- [X] [js-strings.html](./theory-app/js-strings.html)
+- [X] Konstruktoren
 
-## M0 | DOM INTRO
+## Übung: Bilder vergrößern
+- die Bilder aus einer HTML-Datei
+- mit Klick auf den Button werden die Bilder vergrößer
+- [X] [ueb-bilderzoom.html](./theory-app/ueb-bilderzoom.html)
 
-- [ ] Zusammenhang zwischen DOM, HTML, CSS & JS
-- [ ] DOM Knoten & Elemente
+## M13 | JS Objects
+- [X] [js-objects.html](./theory-app/js-objects.html)
+
+## M14 | DOM INTRO
+
+- [X] Zusammenhang zwischen DOM, HTML, CSS & JS
+- [X] [dom-traversing.html](./theory-app/dom-traversing.html)
+- [X] DOM Knoten & Elemente
+
+## M15 | Forms
+-
 - [ ] Events
 - [ ] Navigieren in DOM - Traversing
 

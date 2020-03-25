@@ -34,6 +34,7 @@ text
 - [x] [html-entities.html](./theory-app/html-entities.html)
 - [x] [html-tags.html](./theory-app/html-tags.html)
 - [x] [html-syntax.html](./theory-app/html-syntax.html)
+- [x] browser developer tools > elements > properties
 - [x] [html-attributes-global.html](./theory-app/html-attributes-global.html)
 
 ## Übung: Homepage mit verlinkten Unterseiten
@@ -136,16 +137,17 @@ commited
 
 ## M13 | JS OBJECTS
 
-- [ ] [js-objects.html](./theory-app/js-objects.html)
+- [x] [js-objects.html](./theory-app/js-objects.html)
 
-<!-- 
-Manipulation von HTML
- -->
+## M14 | DOM INTRO
 
-## M0 | DOM INTRO
+- [x] Zusammenhang zwischen DOM, HTML, CSS & JS
+- [x] [dom-traversing.html](./theory-app/dom-traversing.html)
+- [x] DOM Knoten & Elemente
 
-- [ ] Zusammenhang zwischen DOM, HTML, CSS & JS
-- [ ] DOM Knoten & Elemente
+## M15 | FORMS
+
+- [ ] 
 - [ ] Events
 - [ ] Navigieren in DOM - Traversing
 
@@ -155,6 +157,10 @@ Manipulation von HTML
 - [ ] Formulare
 
 js-forms.html
+
+<!-- 
+Manipulation von HTML
+ -->
 
 ## M0 | CSS INTERMEDIATE
 

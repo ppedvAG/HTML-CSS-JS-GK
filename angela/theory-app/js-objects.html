@@ -19,6 +19,12 @@
     <button onclick="createPerson()">ADD</button>
     <br>
     <output id="outp"></output>
+    <table id="myTable">
+
+    </table>
+
+    <!-- beim Klick auf den Button sollen die neuen Objekte in ein Array hinzugefügt werden
+        Array kann tabelarisch ausgegeben werden-->
 
     <script>
         function Person(fname, lname, age) {
@@ -27,13 +33,34 @@
             this.age = age;
         }
 
-        var newPerson;
+        let newPerson;
+        let people = []
         function createPerson() {
             newPerson = new Person(inp1.value, inp2.value, inp3.value);
             console.log(newPerson);
-            for (let prop in newPerson){
-                outp.textContent += newPerson[prop];
+            people.push(newPerson)
+            myTable.innerHTML = `
+            <caption>personen</caption>
+            <thead>
+                <tr>
+                    <th>Vorname</th>
+                    <th>Nachname</th>
+                    <th>Alter</th>
+                </tr>
+            </thead>
+            <tbody id="id_tbody"></tbody>`
+
+            for(let i = 0; i<people.length;i++){
+                let newRow = id_tbody.insertRow()
+                newRow.insertCell().innerText = people[i].fname
+                newRow.insertCell().innerText = people[i].lname
+                newRow.insertCell().innerText = people[i].age
             }
+
+
+            /* for (let prop in newPerson){
+                outp.textContent += newPerson[prop];
+            } */
             
         }
 
