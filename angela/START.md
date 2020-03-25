@@ -116,31 +116,38 @@ js-start.html
 - [X] Zusammenhang zwischen DOM, HTML, CSS & JS
 - [X] [dom-traversing.html](./theory-app/dom-traversing.html)
 - [X] DOM Knoten & Elemente
+- [X] Navigieren in DOM - Traversing
 
 ## M15 | Forms
--
-- [ ] Events
-- [ ] Navigieren in DOM - Traversing
+- [X] [js-forms.html](./theory-app/js-forms.html)
+- [X] Event-Object
 
-## M0 | HTML INTERMEDIATE
+## M16 | Übung
+- zwei inputfelder und ein button
+- button ist disabled
+- beide Inputs haben attribut required und minlength 4
+- wenn die Eingabe in beiden inputs gleich ist und beide Felder valide sind, wird der Button enabled
+- [X][ueb-pw-confirm.html](./theory-app/ueb-pw-confirm.html)
 
-- [ ] Multimedia - Bilder, Audio, Video, Canvas
-- [ ] Formulare
+## M16 | JQuery
 
-js-forms.html
 
 ## M0 | CSS INTERMEDIATE
 
-- [ ] Position
-
+- [ ] Spezifität
+- [ ] Animationen & Transitions
+- [ ] Variable Fonts
+- [ ] Position (static, fixed...)
 - [ ] Display: grid
 - [ ] Display: flex
 - [ ] Column-Count
 - [ ] Media Queries & Breakpoints
 - [ ] CSS Funktionen
-- [ ] Animationen & Transitions
-- [ ] Variable Fonts
-- [ ] Spezifität
+- [ ] CSS Variable
+
+## M0 | HTML INTERMEDIATE
+
+- [ ] Multimedia - Bilder, Audio, Video, Canvas
 
 ## M0 | JS INTERMEDIATE
 
