@@ -134,23 +134,33 @@ commited
 - zwei inputfelder und ein button
 - button ist disabled
 - beide inputs haben attribut required und minlength 4
-
-- [x] [ueb-pw-confirm.html](theory-app/ueb-pw-confirm.html) 
+- [x] [ueb-pw-confirm.html](theory-app/ueb-pw-confirm.html)
 
 ## M16 | JQUERY
 
-- [ ] [jq-docready-winload.html]
+- [x] [jq-docready-winload.html](theory-app/jq-docready-winload.html)
+- [x] [jq-selectors.html](theory-app/jq-selectors.html)
+- [ ] [jq-filter.html](theory-app/jq-filter.html)
+
+## Übung: JQ
+
+- zwei inputs (username, pw)
+- username und pw sind in einem Array abgelegt
+- wenn die Eingabe mit den Werten im Array enthalten ist,
+- Meldung: Willkommen auf unserer Webseite
+- [x] [ueb-jq-login.html](theory-app/ueb-jq-login.html)
 
 ## M0 | CSS INTERMEDIATE
 
-- [ ] Spezifität
+- [x] [css.specifity.html](theory-app/css-specifity.html)
+- [x] [css-grid.html](theory-app/css-grid.html)
 - [ ] Animationen & Transitions
 - [ ] Variable Fonts
 - [ ] Position
 - [ ] Display: grid
 - [ ] Display: flex
 - [ ] Column-Count
-- [ ] Media Queries & Breakpoints
+- [x] Media Queries & Breakpoints
 - [ ] CSS Funktionen
 
 ## M0 | HTML INTERMEDIATE
@@ -161,3 +171,4 @@ commited
 ## M0 | JS INTERMEDIATE
 
 - [ ] offene Themen nach Bedarf der TeilnehmerInnen
+  
