@@ -120,18 +120,23 @@ commited
 ## M14 | DOM INTRO
 
 - [x] Zusammenhang zwischen DOM, HTML, CSS & JS
+- [x] Navidieren in DOM - Traversing
 - [x] [dom-traversing.html](theory-app/dom-traversing.html)
 - [x] DOM Knoten & Elemente
 
 ## M15 | Forms
 
-- [ ] [js-forms.html](theory-app/js-forms.html)
-- [ ] Events
+- [x] [js-forms.html](theory-app/js-forms.html)
+- [x] Events
 
-## M0 | HTML INTERMEDIATE
+## Übung : password confirm
 
-- [ ] Multimedia - Bilder, Audio, Video, Canvas
-- [ ] Formulare
+- zwei inputfelder und ein button
+- button ist disabled
+- beide inputs haben attribut required und minlength 4
+
+- [x] [ueb-pw-confirm.html](theory-app/ueb-pw-confirm.html) 
+
 
 
 ## M0 | CSS INTERMEDIATE
@@ -145,6 +150,11 @@ commited
 - [ ] Column-Count
 - [ ] Media Queries & Breakpoints
 - [ ] CSS Funktionen
+
+## M0 | HTML INTERMEDIATE
+
+- [ ] Multimedia - Bilder, Audio, Video, Canvas
+- [ ] Formulare
 
 ## M0 | JS INTERMEDIATE
 
