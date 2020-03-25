@@ -89,7 +89,7 @@ commited
 - [ ] Operatoren
 - [x] [global object window](theory-app/js-window.html)
 - [x] Kontrollstrukturen
-- [ ] [js-Math.html](theory-app/js-Math.html)
+- [x] [js-Math.html](theory-app/js-Math.html)
 
 ## Übung: Eine Zufallszahl erraten
 
@@ -117,9 +117,10 @@ commited
 
 - [x] [js-objects.html](theory-app/js-objects.html)
 
-## M0 | DOM INTRO
+## M14 | DOM INTRO
 
-- [ ] Zusammenhang zwischen DOM, HTML, CSS & JS
+- [x] Zusammenhang zwischen DOM, HTML, CSS & JS
+- [ ] [dom-traversing.html](theory-app/dom-traversing.html)
 - [ ] DOM Knoten & Elemente
 - [ ] Events
 - [ ] Navigieren in DOM - Traversing
