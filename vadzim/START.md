@@ -2,8 +2,6 @@
 
 [NOTIZEN](./NOTES.md)
 
-text
-
 ## M00 | WARMING UP
 
 - [x] Greeter
@@ -87,7 +85,7 @@ commited
 
 - [x] [css-box.html](./theory-app/css-box.html)
 - [x] [css-inline-block.html](./theory-app/css-inline-block.html)
-- [ ] [css-float.html](./theory-app/css-float.html)
+- [x] [css-float.html](./theory-app/css-float.html)
 
 ## Übung: Navigation einer Webseite
 
@@ -108,7 +106,7 @@ commited
 
 - [x] [vars, identifiers, scopes](./theory-app/js-variables-identifiers-scopes.html)
 - [x] [primitives js-datatypes.html](./theory-app/js-datatypes.html)
-- [ ] Operatoren
+- [x] Operatoren
 - [x] [global object window](./theory-app/js-window.html)
 - [x] Kontrollstrukturen
 - [x] [js-Math.html](./theory-app/js-Math.html)
@@ -161,18 +159,29 @@ commited
 
 ## M16 | JQUERY
 
-- [ ] [jq-docready-winload.html]
+- [x] [jq-docready-winload.html](./theory-app/jq-docready-winload.html)
+- [x] [jq-selectors.html](./theory-app/jq-selectors.html)
+- [ ] [jq-filter.html](./theory-app/jq-filter.html)
+
+## Übung: login form w. jq
+
+- 2 inputs (username, pw)
+- username und pw sind in einem Array abgelegt
+- Wenn die Eingabe mit den Werten im Array zusammenfällt,
+- Meldung: Willkommen auf unserer WebSeite.
+- [x] [ueb-jq-login.html](./theory-app/ueb-jq-login.html)
 
 ## M0 | CSS INTERMEDIATE
 
-- [ ] Spezifität !
+- [x] [css-specificity.html](./theory-app/css-specificity.html)
+- [x] [css-grid.html](./theory-app/css-grid.html)
+- [x] Display: grid
+- [x] Media Queries & Breakpoints
 - [ ] Animationen & Transitions
 - [ ] Variable Fonts
 - [ ] Position (static, fixed...)
-- [ ] Display: grid
 - [ ] Display: flex
 - [ ] Column-Count
-- [ ] Media Queries & Breakpoints !
 - [ ] CSS Funktionen
 - [ ] CSS Variables
 

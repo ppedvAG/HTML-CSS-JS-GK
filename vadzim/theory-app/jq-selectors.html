@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>jq selectors</title>
+    <style>
+        #testId01::after {
+            content: "text nach div#testId01"
+        }
+    </style>
 </head>
 
 <body>
@@ -42,8 +47,9 @@
 
     <script>
         $(function () {
+        // $(function () {  - verkürzte Schreibweise für  -  $(document).ready(function () {
             //Universal
-            /* $('*').css('color','red'); */
+            /* $('*').css('color','red'); */ // äquivalent zu .style.color = 'red'
 
             //Klassen  
             /* $('.test01').css('color','red'); */
@@ -69,21 +75,21 @@
             //:hover in dieser Schreibweise funktioniert nicht - unmöglich mit jQuery
             // $(":hover").css('color','red');  //in Chrome alles rot, in FF alles schwarz
 
-            $("div.test01").css('border', 'thick dotted') // – Wählt alle <p>-Elemente mit der Klasse “demo” aus.
+            $("div.test01").css('border', 'thick dotted') // 
             $("p:first").css('font-size', '2em'); // – Wählt das erste <p>-Element aus.
             /* $("ul li:first" ) – Wählt das erste <li>-Element der ersten <ul> aus.
             */
-            $('#out').text(
-                $("ul li:last-child").text()
+            $('#out').text( // äquivalent zu .innerText in js
+                $("ul li:last-child").text() //– Wählt das letzte <li> Element jeder <ul> aus.
             )
-            /* – Wählt das erste <li> Element jeder <ul> aus.
-            $("a[target='_blank’]”) – Wählt alle <a>-Elemente mit einem target=“_blank”-Setting aus.
+            /* 
+            $("a[target='_blank']") – Wählt alle <a>-Elemente mit einem target=“_blank”-Setting aus.
              */
 
             $(":button").css('background-color', 'purple'); //  - Wählt alle <button>- und <input>-Elemente des Typs "button“ aus.
 
             //Pseudo-Klassen - unmöglich mit jQuery
-            /* $('#testId01::after').css('color','red'); */
+            $('#testId01::after').css('color','red');
         })
     </script>
 

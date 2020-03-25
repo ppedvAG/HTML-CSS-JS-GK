@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Ü JQ LOGIN</title>
+</head>
+<body>
+    <h1>Ü JQ LOGIN</h1>
+
+    <input type="text" id="un" placeholder="username">
+    <input type="text" id="pw" placeholder="password">
+    <button>log in</button>
+    <p id="p_welcome"></p>
+
+    <script>
+        let logInData = {username: 'myNick', password: '12345'}
+        $(function () {
+            $('input').keyup(function () { /*  */
+                if ($('#un').val() == logInData[0] && $('#pw').val() == logInData[0]){
+                    $('#p_welcome').html('Willkommen!')
+                }
+            })
+        })
+
+
+    </script>
+    
+</body>
+</html>
