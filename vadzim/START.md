@@ -129,7 +129,7 @@ commited
 - [x] [js-strings.html](./theory-app/js-strings.html)
 - [x] Konstruktoren
 
-Übung: Bilder vergrößern
+## Übung: Bilder vergrößern
 
 - die Bilder aus einer HTML-Datei
 - mit Klick auf den Button werden die Bilder vergrößert
@@ -142,38 +142,46 @@ commited
 ## M14 | DOM INTRO
 
 - [x] Zusammenhang zwischen DOM, HTML, CSS & JS
+- [x] Navigieren in DOM - Traversing
 - [x] [dom-traversing.html](./theory-app/dom-traversing.html)
 - [x] DOM Knoten & Elemente
 
 ## M15 | FORMS
 
-- [ ] 
-- [ ] Events
-- [ ] Navigieren in DOM - Traversing
+- [x] [js-forms.html](./theory-app/js-forms.html)
+- [x] Event-Object
+
+## Übung : password confirm
+
+- zwei inputfelder und ein button
+- button ist disabled
+- beide Inputs haben attribut required und minlength 4
+- wenn die Eingabe in beiden inputs gleich ist und beide Felder valide sind, wird der Button enabled
+- [x] [ueb-pw-confirm.html](./theory-app/ueb-pw-confirm.html)
+
+## M16 | JQUERY
+
+- [ ] [jq-docready-winload.html]
+
+## M0 | CSS INTERMEDIATE
+
+- [ ] Spezifität !
+- [ ] Animationen & Transitions
+- [ ] Variable Fonts
+- [ ] Position (static, fixed...)
+- [ ] Display: grid
+- [ ] Display: flex
+- [ ] Column-Count
+- [ ] Media Queries & Breakpoints !
+- [ ] CSS Funktionen
+- [ ] CSS Variables
+
+select - options löschen, zwischenspeichern, filtern
 
 ## M0 | HTML INTERMEDIATE
 
 - [ ] Multimedia - Bilder, Audio, Video, Canvas
-- [ ] Formulare
-
-js-forms.html
-
-<!-- 
-Manipulation von HTML
- -->
-
-## M0 | CSS INTERMEDIATE
-
-- [ ] Spezifität
-- [ ] Animationen & Transitions
-- [ ] Variable Fonts
-- [ ] Position
-- [ ] Display: grid
-- [ ] Display: flex
-- [ ] Column-Count
-- [ ] Media Queries & Breakpoints
-- [ ] CSS Funktionen
-
+  
 ## M0 | JS INTERMEDIATE
 
 - [ ] offene Themen nach Bedarf der TeilnehmerInnen

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>jq each</title>
+
+    <style>
+        table,
+        caption,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        /*caption {border-top: 1px solid black;
+              border-left: 1px solid black; border-right: 1px solid black;} falls der doppelte Strich nicht gefällt...*/
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+
+        caption {
+            font-size: 1.5em;
+        }
+
+        [contenteditable="true"]:active,
+        [contenteditable="true"]:focus {
+            border: none;
+            outline: none;
+        }
+
+        /*  thead{color: rgb(157, 157, 255);}
+              tbody tr:nth-of-type(odd){background-color:lavender;}
+            */
+    </style>
+
+</head>
+
+<body>
+
+
+    <table>
+        <caption>Autos</caption>
+        <thead>
+            <tr>
+                <th>Marke</th>
+                <th>Typ</th>
+                <th>Farbe</th>
+            </tr>
+        </thead>
+        <tbody contenteditable="true">
+            <tr>
+                <td class="marke">Skoda</td>
+                <td>Karoq</td>
+                <td>weiß</td>
+            </tr>
+            <tr>
+                <td class="marke">Kia</td>
+                <td>Sportage</td>
+                <td>rot</td>
+            </tr>
+            <tr>
+                <td class="marke">Hyundai</td>
+                <td>ix35</td>
+                <td>blau</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <button id="btn" value="test">Autoliste</button>
+    <p id="carsOutput"></p>
+    <br><br>
+
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+
+                // Tabelleninhalt mit JQ als Liste ausgeben
+                let spalten = $('thead tr th'); //liefert ein Objekt mit 3 key-value Paaren!!!, kein Array / Collection / List
+                console.log('spalten :', spalten.length); // 3 als number
+
+                // console.log("tds: ", $("td")); // Objekt
+                /* let arr = new Array(5);
+                console.log('arr :', arr); */
+
+                var carCaption = $("caption:first-of-type").html();
+                // console.log('carCaption :', carCaption); // Autos als string
+                var firstTdInTr = $("td:first-of-type");
+                var text = "<h1>" + carCaption + "</h1>" + "<ul>";
+                //tds is now a jQuery element, containing all tds
+
+                $("td").each(function () {
+                    console.log('$(this).attr() :', $(this).attr('class'));
+                    text += ($(this).attr('class') === 'marke') ? "<li>" + $(this).html() + "</li>" : "<ul><li>" + $(this).html() + "</li></ul>"
+                    console.log('this :', this);
+                });
+                text += "</ul>";
+                $("#carsOutput").html(text);
+            })
+        });
+    </script>
+</body>
+
+</html>
