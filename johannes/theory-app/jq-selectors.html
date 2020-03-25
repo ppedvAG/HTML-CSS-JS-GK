@@ -41,9 +41,9 @@
     <p id="out"></p>
 
     <script>
-        $(function () {
+        $(function () { // verkürzte Schreibweise für $(document).ready(function () {}) 
             //Universal
-            /* $('*').css('color','red'); */
+            /* $('*').css('color','red'); */ // Äquivalent zu .style.color
 
             //Klassen  
             /* $('.test01').css('color','red'); */
@@ -73,13 +73,14 @@
             $("p:first").css('font-size', '2em'); // – Wählt das erste <p>-Element aus.
             /* $("ul li:first" ) – Wählt das erste <li>-Element der ersten <ul> aus.
             */
-            $('#out').text(
-                $("ul li:last-child").text()
-            )
-            /* – Wählt das erste <li> Element jeder <ul> aus.
-            $("a[target='_blank’]”) – Wählt alle <a>-Elemente mit einem target=“_blank”-Setting aus.
-             */
 
+            $('#out').text( // Äquivalent zu .innerText in JS
+                $("ul li:last-child").text() /* – Wählt das letze <li> Element jeder <ul> aus. */
+            )
+
+            $("a[target='_blank']") /* – Wählt alle <a>-Elemente mit einem target=“_blank”-Setting aus. */
+
+            // Type
             $(":button").css('background-color', 'purple'); //  - Wählt alle <button>- und <input>-Elemente des Typs "button“ aus.
 
             //Pseudo-Klassen - unmöglich mit jQuery

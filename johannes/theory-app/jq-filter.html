@@ -16,10 +16,8 @@
         </ul>
         <script>
           $(function() {
-            $("#inputSearch").keyup(function() {
-              var inpVal = $(this)
-                .val()
-                .toLowerCase();
+            $("#inputSearch").keyup(() => {
+              var inpVal = $(this).val().toLowerCase();
               $("li").filter(() => {
                 $(this).toggle(
                   $(this).text().toLowerCase().indexOf(inpVal) > -1

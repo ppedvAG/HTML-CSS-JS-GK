@@ -85,7 +85,7 @@ js-start.html
 ## M11 | JS CONTINUED
 - [X] [vars, identifiers, scopes](./theory-app/js-variables-identifiers-scopes.html)
 - [X] [primitives js-datatypes](./theory-app/js-datatypes.html)
-- [ ] Operatoren
+- [X] Operatoren
 - [X] [global object window](./theory-app/js-window.html)
 - [X] Kontrollstrukturen
 - [X] [js-math.html](./theory-app/js-Math.html)
@@ -116,31 +116,49 @@ js-start.html
 - [X] Zusammenhang zwischen DOM, HTML, CSS & JS
 - [X] [dom-traversing.html](./theory-app/dom-traversing.html)
 - [X] DOM Knoten & Elemente
+- [X] Navigieren in DOM - Traversing
 
 ## M15 | Forms
--
-- [ ] Events
-- [ ] Navigieren in DOM - Traversing
+- [X] [js-forms.html](./theory-app/js-forms.html)
+- [X] Event-Object
+
+## M16 | Übung
+- zwei inputfelder und ein button
+- button ist disabled
+- beide Inputs haben attribut required und minlength 4
+- wenn die Eingabe in beiden inputs gleich ist und beide Felder valide sind, wird der Button enabled
+- [X][ueb-pw-confirm.html](./theory-app/ueb-pw-confirm.html)
+
+## M16 | JQuery
+
+- [X] [jq-docready-winload.html](./theory-app/jq-docready-winload.html)
+- [X] [jq-selectors.html](./theory-app/jq-selectors.html)
+- [ ] [jq-filter.html](./theory-app/jq-filter.html)
+
+## Übung:
+- 2 inputs (username, pw)
+- username und pw sind in einem Array abgelegt
+- Wenn die Eingabe mit den Werten im Array zusammenfällt
+- Meldung: Wilkommen auf unserer Webseite
+- [X] [ueb-jq-login.html](./theory-app/ueb-login.html)
+
+## M17 | CSS INTERMEDIATE
+
+- [X] [css-specificity.html](./theory-app/css-specificity.html)
+- [ ] [css-grid.html](./theory-app/css-grid.html)
+- [ ] Animationen & Transitions
+- [ ] Variable Fonts
+- [ ] Position (static, fixed...)
+- [X] Display: grid
+- [ ] Display: flex
+- [ ] Column-Count
+- [X] Media Queries & Breakpoints
+- [ ] CSS Funktionen
+- [ ] CSS Variable
 
 ## M0 | HTML INTERMEDIATE
 
 - [ ] Multimedia - Bilder, Audio, Video, Canvas
-- [ ] Formulare
-
-js-forms.html
-
-## M0 | CSS INTERMEDIATE
-
-- [ ] Position
-
-- [ ] Display: grid
-- [ ] Display: flex
-- [ ] Column-Count
-- [ ] Media Queries & Breakpoints
-- [ ] CSS Funktionen
-- [ ] Animationen & Transitions
-- [ ] Variable Fonts
-- [ ] Spezifität
 
 ## M0 | JS INTERMEDIATE
 

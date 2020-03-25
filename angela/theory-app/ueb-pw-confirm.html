@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ueb-Pw-confirm</title>
+</head>
+<body>
+    <h1>Ü PW confirm</h1>
+    <pre>
+        - zwei inputfelder und ein button
+        - button ist disabled
+        - beide Inputs haben attribut required und minlength 4
+        - wenn die Eingabe in beiden inputs gleich ist und beide Felder valide sind, wird der Button enabled
+    </pre>
+
+    <input type="text" id="PW1" minlength="4" required>
+    <input type="text" id="PW2" minlength="4" required>
+    <button type="button" id="btn" disabled>Check</button>
+
+    <p id="p_hint"></p>
+
+    <script>
+        PW1.addEventListener('input', handleInputs)
+        PW2.addEventListener('input', handleInputs)
+        function handleInputs(){
+            if(PW1.validity.valid && PW2.validity.valid && PW1.value == PW2.value){
+                btn.disabled = false
+            } else{
+                btn.disabled = true
+                p_hint.innerText = ''
+            }
+
+        }
+
+        btn.addEventListener('click', giveHint)
+        function giveHint(){
+            p_hint.innerText = 'Passwort bestätigt'
+        }
+    </script>
+    
+</body>
+</html>
