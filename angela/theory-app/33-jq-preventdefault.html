@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>jq preventdefault</title>
+</head>
+
+<body>
+
+
+    <h1>PreventDefault()</h1>
+
+    <a href="https://ppedv.de" target="_blank">LINK</a>
+
+    <h1>Autoreservierung</h1>
+
+    <label for="fromInp">
+        von:
+        <input type="date" name="" id="fromInp">
+    </label><label for="tilInp">
+        bis:
+        <input type="date" name="" id="tilInp">
+    </label>
+
+    <p>VW</p>
+    <p>AUDI</p>
+    <p>SKODA</p>
+    <p>VOLVO</p>
+    <p>BMW</p>
+
+    <script>
+        $(function () {
+            $('a').click(function(event) {
+                let confirmVar = confirm('Der Link ist sehr gefährlich. Wollen Sie es wirklich tun?');
+                console.log('confirmVar :', confirmVar);
+                if (!confirmVar) {
+                    event.preventDefault();
+                }
+            })
+
+
+
+
+
+
+            const cars = [
+                { name: 'VW', bookedFrom: '2019-12-13', bookedUntil: '2019-12-15' },
+                { name: 'AUDI', bookedFrom: '2019-12-10', bookedUntil: '2019-12-11' },
+                { name: 'SKODA', bookedFrom: '2019-12-16', bookedUntil: '2019-12-20' },
+                { name: 'VOLVO', bookedFrom: '2019-12-25', bookedUntil: '2019-12-30' },
+                { name: 'BMW', bookedFrom: '2019-12-30', bookedUntil: '2020-01-02' }
+            ]
+            let firstFilterArray = cars.filter(el => el.bookedFrom > fromInp.value)
+            ///////////ANFANGSWERTE SETZEN/////////////////
+            let d = new Date();
+            let startDate = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+            console.log('d :', d);
+            $('#fromInp').attr('value', startDate);
+            console.log('fromInp.value :', fromInp.value);
+            let endDate = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate() + 2}`;
+            $('#tilInp').attr('value', endDate);
+
+            ////////////NUR VERFÜGBARE AUTOS ANZEIGEN/////////////
+            $("#fromInp, #tilInp").change(function () {
+                let fromDate = $('#fromInp').val();
+                let tilDate = $('#tilInp').val();               
+                $("p").filter(function () {
+                    $(this).toggle(
+                        true
+                        //  $(this).text() === 
+
+
+                        // $(this).text().toLowerCase().indexOf(inpVal) > -1
+                    );
+
+                });
+
+            });
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

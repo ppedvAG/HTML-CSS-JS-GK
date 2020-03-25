@@ -5,17 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formulare</title>
+    <title>FORMS</title>
 </head>
 
 <h1>FORMULARE</h1>
+<a href="#fieldset">fieldset</a>
 
 <form action="#" id="firstForm">
+    <pre>
+        action beim Tag form erwartet als Inhalt den Pfad zu der Datei auf der Server
+        die, die Formular-Einträge bearbeiten soll
+    </pre>
 
-    <section>
+
+    <section id="datalist">
         <h2>Datalist & Autovervollständigung</h2>
+        <pre>
+            Mit Datalist kann man dem Benutzer schon verbereite Einträge anbieten.
+            Seine eigenen Eingaben sind auch möglich.
+        </pre>
         <!-- ComboBox in .NET -->
-        <input type="text" id="inp1" list="farben" autocomplete="on" />
+        <input type="text" id="inp1" list="farben" autocomplete="on" tabindex="2"/>
         <!-- autocomplete - filtern beim Tippen -->
         <!-- 2 inputs dürfen die gleiche Data-Liste benutzen -->
         <!-- <input type="text" id="inp2" list="farben" autocomplete="on" /> -->
@@ -25,13 +35,18 @@
             <option value="Blau"></option>
         </datalist>
         <button id="btn1" type="button">OK</button>
+        <!-- Alternativ zu button: 
+            <input type="button" value=OK> -->
         <output id="outp1"></output>
     </section>
     <hr>
 
 
-    <section>
+    <section id="fieldset">
         <h2>fieldset</h2>
+        <pre>
+            Hinweise bei email-Feld kommen automatisch vom Browser
+        </pre>
         <p>Eingabe aus Input wird beim Klick auf Button in Output angezeigt</p>
         <fieldset>
             <legend>NAME</legend>
@@ -49,14 +64,14 @@
                 <input id="inpEmail" type="email" name="" value="@gmail.com" pattern="^.+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
                     title="Achte auf RegExp" /></label>
 
-            <button onclick="showInputValue()">zeige die Eingabe</button>
+            <button id=btn_fieldset>zeige die Eingabe</button>
             <!-- <button type="button" onclick="showInputValue()">zeige die Eingabe</button> -->
         </fieldset>
         <output id="outp2"></output>
         <hr />
     </section>
 
-    <section>
+    <section id="input:color">
         <h2>input:color</h2>
         <input id=crlId type=color name=clr  tabindex=3 />
         <input id=btnColor type=button value=OK>
@@ -64,11 +79,10 @@
         <!-- bei Edge aucht button mit type=button ruft submit auf -->
         <output id=outpColor></output>
         <!-- Farben kommen in der hexadezimalen Syntax als string rein -->
-
         <hr />
     </section>
 
-    <section>
+    <section id=input:radio>
         <h2>input:radio</h2>
         <h3>Matrixfrage links / rechts</h3>
         <pre>
@@ -77,43 +91,47 @@
         </pre>
         <div>
             <label for="left">blau
-                <input type="radio" id="left" value="left" name="additional" />
+                <input type="radio" id="left" value="blau" name="additional" />
             </label>
         </div>
         <div>
             <label for="right">rot
-                <input type="radio" id="right" value="right" name="additional" />
+                <input type="radio" id="right" value="rot" name="additional" />
             </label>
         </div>
         <output id="outRadio"></output>
         <hr />
     </section>
 
-    <section>
+    <section id=input:checkbox>
         <h2>input:checkbox</h2>
         <h3>Pizzaextras</h3>
         <div>
-            <label for="cheese">Käse</label>
-            <input type="checkbox" id="cheese" name="inpCheck" value="Käse" />
+            <label for="cheese">
+                <input type="checkbox" id="cheese" name="inpCheck" value="Käse" />
+                Käse</label>
         </div>
         <div>
-            <label for="salami">Salami</label>
-            <input type="checkbox" id="salami" name="inpCheck" value="Salami" />
+            <label for="salami">
+                <input type="checkbox" id="salami" name="inpCheck" value="Salami" />
+                Salami</label>
         </div>
         <div>
-            <label for="mushrooms">Pilze</label>
-            <input type="checkbox" id="mushrooms" name="inpCheck" value="Pilze" />
+            <label for="mushrooms">
+                <input type="checkbox" id="mushrooms" name="inpCheck" value="Pilze" />
+                Pilze</label>
         </div>
         <div>
-            <label for="pineapple">Ananas</label>
-            <input type="checkbox" id="pineapple" name="inpCheck" value="Ananas" />
+            <label for="pineapple">
+                <input type="checkbox" id="pineapple" name="inpCheck" value="Ananas" />
+                Ananas</label>
         </div>
         <button type="button" id="btnPizza">OK</button>
         <output id="outPizza"></output>
         <hr />
     </section>
 
-    <section>
+    <section id=input:range>
         <h2>input:range</h2>
         <h3>Hotelzimmerabfrage</h3>
         <div>
@@ -127,7 +145,11 @@
         <hr />
     </section>
 
-    <section>
+    <progress></progress>
+    <meter></meter>
+
+
+    <section id=try-catch>
         <h2>min max & try catch</h2>
         <p>
             Beim Alter 7-16 - Kindermarathon, 17-65 - Marathon, 65-75 - Marathon mit
@@ -144,7 +166,7 @@
         <hr>
     </section>
 
-    <section>
+    <section id=validate-date>
         <h2>Datumvalidierung</h2>
 
         <fieldset id="person">
@@ -162,41 +184,58 @@
                         title="Ausstellungsdatum"></label> </div>
             <div class="inpItem"><label for="inpAblDatId">Ablaufsdatum<input id="inpAblDatId" type="date"
                         title="Ablaufsdatum"></label> </div>
-            <div class="inpItem"><input type="button" id="btnValidatePassId" value="OK"></div>
+            <div class="inpItem">
+                <input type="button" id="btnValidatePassId" value="OK">
+            </div>
             <div id="infoMessageDiv"></div>
 
         </fieldset>
 
     </section>
 
-    <section>
+    <section id=input:url>
         <h2>input:url</h2>
-        <input type="url" name="" id="inpUrl">
+        <input type="url" name="" id="inpUrl" value="https://">
+        <input type="url" name="" id="inpUrl2" pattern="www\.web\.com">
+        <hr>
     </section>
 
-    <section>
+    <section id=input:search>
         <h2>input:search</h2>
-        <p>in Chrome erscheint ein Kreuz zum Löschen von der Eingabe</p>
+        <p>in Chrome und Edge erscheint ein Kreuz zum Löschen von der Eingabe</p>
         <input type="search" name="" id="inpSearch">
+        <hr>
     </section>
 
-    <section>
+    <section id="input:file">
         <h2>input:file</h2>
         <input type="file" name="" id="inpFile">
+        <hr>
     </section>
+    
+    <section id="submitevent">
+        <h2>submitevent</h2>
+        <pre>
+            default-Wert vom Attribut type bei einem button innerhalb von form-Tag 
+            ist submit!
+        </pre>
+        <button>OK</button>
+
+    </section>
+    
 </form>
 
 <script>
     /* INPUT & DATALIST */
     /* Hey btn1, wenn bei dir ein click-event vorkommt, nimm den Handler 'showCol' */
-    btn1.addEventListener("click", showCol)
-    function showCol() {
-        let col = document.getElementById('inp1').value;
-        document.getElementById('outp1').textContent = col;
-        
+    btn1.addEventListener("click", showColor)
+    function showColor() {
+        let color = document.getElementById('inp1').value;
+        document.getElementById('outp1').textContent = color;
     }
 
     // FIELDSET
+    btn_fieldset.addEventListener('click', showInputValue)
     function showInputValue() {
         let text;
         text = fname.value + " " + lname.value;
@@ -211,10 +250,26 @@
     
     // RADIO
     /* Idee: Wahl des Benutzers abfragen */
+    /* left.addEventListener('input', showRadioCheck)
+    right.addEventListener('input', showRadioCheck) */
+    function showRadioCheck() {
+        if (left.checked) {
+            outRadio.innerText = 'blau wurde gewählt'
+        } else {
+            outRadio.innerText = 'rot wurde gewählt'
+
+        }
+    }
+    /* Option mit dem Event-Object */
+    left.addEventListener('input', showRadioCheckMitEventO)
+    right.addEventListener('input', showRadioCheckMitEventO)
+    function showRadioCheckMitEventO(event) {
+        outRadio.innerText = event.target.value + ' wurde gewählt'
+    }
 
 
-    // CHECKBOX
-    btnPizza.addEventListener("click", getSelected, true);
+    // CHECKBOX    
+    btnPizza.addEventListener('click', getSelected)
     function getSelected() {
         outPizza.textContent = "";
         // console.log('hallo aus getSelected');
@@ -224,6 +279,7 @@
         extrasArr.forEach(el => {
             if (el.checked) {
                 outPizza.textContent += el.value + " ";
+                el.checked = false
             }
         });
     }
@@ -239,7 +295,7 @@
     showPrice()
 
     
-    // TRY CATCH FINALLY
+    // #region TRY CATCH FINALLY
 
     function trycatch() {
         let inpValue = inpAge.value;
@@ -273,6 +329,8 @@
     }
     btnAge.addEventListener("click", trycatch);
 
+    //#endregion
+
 
     /* /////////////DATUMVALIDIERUNG / DATUMPLAUSIBILITÄT ////////////// */
     btnValidatePassId.addEventListener("click", myFunction);
@@ -281,7 +339,8 @@
         console.info('Geburtsdatum')
         console.log('inpGebDatId :', inpGebDatId);
         console.log('typeof inpGebDatId :', typeof inpGebDatId);
-        console.log(inpGebDatId.valueAsNumber)
+        console.log(inpGebDatId.valueAsNumber) // 1583884800000
+        console.log('inpGebDatId.value :', inpGebDatId.value); // 2020-03-11
         console.info('Ausstellungsdatum')
         console.log(inpAusstDatId.valueAsNumber)
         console.info('Ablaufsdatum')
@@ -326,6 +385,7 @@
     function handleFileInput() {
         console.log('inpFile.value :', inpFile.value); // C:\fakepath\selteneShortcuts.txt als string
     }
+    console.log('inpUrl2 :', inpUrl2);
 </script>
 
 </body>
