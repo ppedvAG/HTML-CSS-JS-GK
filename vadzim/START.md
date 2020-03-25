@@ -134,10 +134,13 @@ commited
 - mit Klick auf den Button werden die Bilder vergrößert
 - [x] [ueb-bilderzoom.html](./theory-app/ueb-bilderzoom.html)
 
+## M13 | JS OBJECTS
 
+- [ ] [js-objects.html](./theory-app/js-objects.html)
 
-- [ ] Objekt-Typen
-
+<!-- 
+Manipulation von HTML
+ -->
 
 ## M0 | DOM INTRO
 
