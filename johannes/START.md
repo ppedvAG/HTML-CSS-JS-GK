@@ -120,17 +120,19 @@ commited
 ## M14 | DOM INTRO
 
 - [x] Zusammenhang zwischen DOM, HTML, CSS & JS
-- [ ] [dom-traversing.html](theory-app/dom-traversing.html)
-- [ ] DOM Knoten & Elemente
+- [x] [dom-traversing.html](theory-app/dom-traversing.html)
+- [x] DOM Knoten & Elemente
+
+## M15 | Forms
+
+- [ ] [js-forms.html](theory-app/js-forms.html)
 - [ ] Events
-- [ ] Navigieren in DOM - Traversing
 
 ## M0 | HTML INTERMEDIATE
 
 - [ ] Multimedia - Bilder, Audio, Video, Canvas
 - [ ] Formulare
 
-js-forms.html
 
 ## M0 | CSS INTERMEDIATE
 
