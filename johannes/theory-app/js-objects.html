@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>js-objects</title>
+    <style>
+      #outp {
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="inp1">VORNAME: <input type="text" id="inp1"/></label>
+    <label for="inp2">NACHNAME: <input type="text" id="inp2"/></label>
+    <label for="inp3">ALTER: <input type="number" id="inp3"/></label>
+    <button onclick="createPerson()">ADD</button>
+    <br />
+    <output id="outp"></output>
+    <table id="myTable"></table>
+
+    <script>
+      function Person(fname, lname, age) {
+        this.fname = fname;
+        this.lname = lname;
+        this.age = age;
+      }
+
+      let newPerson;
+      let people = [];
+      function createPerson() {
+        newPerson = new Person(inp1.value, inp2.value, inp3.value);
+        console.log(newPerson);
+        people.push(newPerson);
+        myTable.innerHTML = `
+            <caption>Personen</caption>
+                <thead>
+                    <tr>
+                        <th>Vorname</th>
+                        <th>Nachname</th>
+                        <th>Alter</th>
+                    </tr>
+                </thead>
+                <tbody id="id_tbody"></tbody>`
+        
+        for (let i = 0; i < people.length; i++){
+            let newRow = id_tbody.insertRow()
+            newRow.insertCell().innerText = people[i].fname
+            newRow.insertCell().innerText = people[i].lname
+            newRow.insertCell().innerText = people[i].age
+        }
+
+        /* for (let prop in newPerson) {
+          outp.textContent += newPerson[prop];
+        } */
+      }
+    </script>
+  </body>
+</html>

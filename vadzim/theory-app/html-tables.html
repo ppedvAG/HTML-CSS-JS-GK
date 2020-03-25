@@ -15,6 +15,7 @@
             border: thick solid;
             border-collapse: collapse;
             /* entfernt Abstände (margins) zwischen den Zellen */
+            caption-side: bottom;
         }
         /* even | an+b */
         tbody tr:nth-child(odd) {
@@ -73,7 +74,11 @@
         </tfoot>
     </table>
 
-    <h2>Lösung von Alina</h2>
+    <h2>*todo #1</h2>
+    <pre>
+        interessant, dass der Text, welcher außerhalb von Zellen steht,
+        auch außerhalb von der Tabelle gerendert wird
+    </pre>
     <!-- table>caption{table caption}+(thead{table head}>tr>(th{thead cell $})*5)(tbody{table body}>(tr>(td{tbody cell $})*5)*4)(tfoot{table foot}>tr>(th{tfoot cell $})*5) -->
     <table>
         <caption>

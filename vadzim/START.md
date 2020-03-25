@@ -34,6 +34,7 @@ text
 - [x] [html-entities.html](./theory-app/html-entities.html)
 - [x] [html-tags.html](./theory-app/html-tags.html)
 - [x] [html-syntax.html](./theory-app/html-syntax.html)
+- [x] browser developer tools > elements > properties
 - [x] [html-attributes-global.html](./theory-app/html-attributes-global.html)
 
 ## Übung: Homepage mit verlinkten Unterseiten
@@ -134,15 +135,19 @@ commited
 - mit Klick auf den Button werden die Bilder vergrößert
 - [x] [ueb-bilderzoom.html](./theory-app/ueb-bilderzoom.html)
 
+## M13 | JS OBJECTS
 
+- [x] [js-objects.html](./theory-app/js-objects.html)
 
-- [ ] Objekt-Typen
+## M14 | DOM INTRO
 
+- [x] Zusammenhang zwischen DOM, HTML, CSS & JS
+- [x] [dom-traversing.html](./theory-app/dom-traversing.html)
+- [x] DOM Knoten & Elemente
 
-## M0 | DOM INTRO
+## M15 | FORMS
 
-- [ ] Zusammenhang zwischen DOM, HTML, CSS & JS
-- [ ] DOM Knoten & Elemente
+- [ ] 
 - [ ] Events
 - [ ] Navigieren in DOM - Traversing
 
@@ -152,6 +157,10 @@ commited
 - [ ] Formulare
 
 js-forms.html
+
+<!-- 
+Manipulation von HTML
+ -->
 
 ## M0 | CSS INTERMEDIATE
 
