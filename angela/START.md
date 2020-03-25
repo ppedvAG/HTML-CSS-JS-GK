@@ -85,7 +85,7 @@ js-start.html
 ## M11 | JS CONTINUED
 - [X] [vars, identifiers, scopes](./theory-app/js-variables-identifiers-scopes.html)
 - [X] [primitives js-datatypes](./theory-app/js-datatypes.html)
-- [ ] Operatoren
+- [X] Operatoren
 - [X] [global object window](./theory-app/js-window.html)
 - [X] Kontrollstrukturen
 - [X] [js-math.html](./theory-app/js-Math.html)
@@ -131,17 +131,28 @@ js-start.html
 
 ## M16 | JQuery
 
+- [X] [jq-docready-winload.html](./theory-app/jq-docready-winload.html)
+- [X] [jq-selectors.html](./theory-app/jq-selectors.html)
+- [ ] [jq-filter.html](./theory-app/jq-filter.html)
 
-## M0 | CSS INTERMEDIATE
+## Übung:
+- 2 inputs (username, pw)
+- username und pw sind in einem Array abgelegt
+- Wenn die Eingabe mit den Werten im Array zusammenfällt
+- Meldung: Wilkommen auf unserer Webseite
+- [X] [ueb-jq-login.html](./theory-app/ueb-login.html)
 
-- [ ] Spezifität
+## M17 | CSS INTERMEDIATE
+
+- [X] [css-specificity.html](./theory-app/css-specificity.html)
+- [ ] [css-grid.html](./theory-app/css-grid.html)
 - [ ] Animationen & Transitions
 - [ ] Variable Fonts
 - [ ] Position (static, fixed...)
-- [ ] Display: grid
+- [X] Display: grid
 - [ ] Display: flex
 - [ ] Column-Count
-- [ ] Media Queries & Breakpoints
+- [X] Media Queries & Breakpoints
 - [ ] CSS Funktionen
 - [ ] CSS Variable
 
