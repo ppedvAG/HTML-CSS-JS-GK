@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Ü JQ Login</title>
+</head>
+<body>
+    <h1>Ü JQ Login</h1>
+    <pre>
+        - 2 inputs (username, pw)
+        - username und pw sind in einem Array abgelegt
+        - Wenn die Eingabe mit den Werten im Array zusammenfällt
+        - Meldung: Wilkommen auf unserer Webseite
+    </pre>
+
+    <input type="text" id="un" placeholder="username">
+    <input type="text" id="pw" placeholder="password">
+    <button type="button">login in</button>
+    <pre id="output"></pre>
+
+    <script>
+        let loginData = {username: 'test', password: 'PWtest'}
+        $(()=>{
+            $('input').keyup(()=>{
+                if($('#un').val() == loginData.username && $('#pw').val() == loginData.password){
+                    $('#output').text('Wilkommen auf unserer Webseite')
+
+                } else{
+                    $('#output').text('leider nicht')
+                }
+            })
+
+        })
+        
+    </script>
+    
+    
+</body>
+</html>

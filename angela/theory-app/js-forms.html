@@ -11,9 +11,17 @@
 <h1>FORMULARE</h1>
 
 <form action="#" id="firstForm">
+    <pre>
+        action beim Tag form erwartet als Inhalt den Pfad zur der Datei auf der Server
+        die, die Formular-Einträge bearbeiten soll
+    </pre>
 
-    <section>
+    <section id="datalist">
         <h2>Datalist & Autovervollständigung</h2>
+        <pre>
+            Mit Datalist kann man dem Benutzer schon vorbereitete Einträge anbieten.
+            Seine eigenen Eingabe sind auch möglich.
+        </pre>
         <!-- ComboBox in .NET -->
         <input type="text" id="inp1" list="farben" autocomplete="on" />
         <!-- autocomplete - filtern beim Tippen -->
@@ -30,8 +38,11 @@
     <hr>
 
 
-    <section>
+    <section id="fieldset">
         <h2>fieldset</h2>
+        <pre>
+            Hinweis bei email-Feld kommen automatisch vom Browser
+        </pre>
         <p>Eingabe aus Input wird beim Klick auf Button in Output angezeigt</p>
         <fieldset>
             <legend>NAME</legend>
@@ -49,14 +60,14 @@
                 <input id="inpEmail" type="email" name="" value="@gmail.com" pattern="^.+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
                     title="Achte auf RegExp" /></label>
 
-            <button onclick="showInputValue()">zeige die Eingabe</button>
+            <button id="btn_fieldset">zeige die Eingabe</button>
             <!-- <button type="button" onclick="showInputValue()">zeige die Eingabe</button> -->
         </fieldset>
         <output id="outp2"></output>
         <hr />
     </section>
 
-    <section>
+    <section id="input:color">
         <h2>input:color</h2>
         <input id=crlId type=color name=clr  tabindex=3 />
         <input id=btnColor type=button value=OK>
@@ -68,7 +79,7 @@
         <hr />
     </section>
 
-    <section>
+    <section id="input:radio">
         <h2>input:radio</h2>
         <h3>Matrixfrage links / rechts</h3>
         <pre>
@@ -89,31 +100,35 @@
         <hr />
     </section>
 
-    <section>
+    <section id="input:checkbox">
         <h2>input:checkbox</h2>
         <h3>Pizzaextras</h3>
         <div>
-            <label for="cheese">Käse</label>
+            <label for="cheese">
             <input type="checkbox" id="cheese" name="inpCheck" value="Käse" />
+            Käse</label>
         </div>
         <div>
-            <label for="salami">Salami</label>
+            <label for="salami">
             <input type="checkbox" id="salami" name="inpCheck" value="Salami" />
+            Salami</label>
         </div>
         <div>
-            <label for="mushrooms">Pilze</label>
+            <label for="mushrooms">
             <input type="checkbox" id="mushrooms" name="inpCheck" value="Pilze" />
+            Pilze</label>
         </div>
         <div>
-            <label for="pineapple">Ananas</label>
+            <label for="pineapple">
             <input type="checkbox" id="pineapple" name="inpCheck" value="Ananas" />
+            Ananas</label>
         </div>
         <button type="button" id="btnPizza">OK</button>
         <output id="outPizza"></output>
         <hr />
     </section>
 
-    <section>
+    <section id="input:range">
         <h2>input:range</h2>
         <h3>Hotelzimmerabfrage</h3>
         <div>
@@ -127,7 +142,7 @@
         <hr />
     </section>
 
-    <section>
+    <section id="try-Catch">
         <h2>min max & try catch</h2>
         <p>
             Beim Alter 7-16 - Kindermarathon, 17-65 - Marathon, 65-75 - Marathon mit
@@ -144,7 +159,7 @@
         <hr>
     </section>
 
-    <section>
+    <section id="validate-date">
         <h2>Datumvalidierung</h2>
 
         <fieldset id="person">
@@ -166,24 +181,39 @@
             <div id="infoMessageDiv"></div>
 
         </fieldset>
+        <hr>
 
     </section>
 
-    <section>
+    <section id="input:url">
         <h2>input:url</h2>
-        <input type="url" name="" id="inpUrl">
+        <input type="url" name="" id="inpUrl" value="https://">
+        <hr>
     </section>
 
-    <section>
+    <section id="input:search">
         <h2>input:search</h2>
         <p>in Chrome erscheint ein Kreuz zum Löschen von der Eingabe</p>
         <input type="search" name="" id="inpSearch">
+        <hr>
     </section>
 
-    <section>
+    <section id="input:file">
         <h2>input:file</h2>
         <input type="file" name="" id="inpFile">
+        <hr>
     </section>
+
+    <section id="submit:event">
+        <h2>submitevent</h2>
+        <pre>
+            Default-Wert vom Attribut type bei einem Button innerhalb von Form-Tag
+            ist submit! 
+        </pre>
+        <button>OK</button>
+    </section>
+
+    
 </form>
 
 <script>
@@ -197,6 +227,7 @@
     }
 
     // FIELDSET
+    btn_fieldset.addEventListener('click',showInputValue)
     function showInputValue() {
         let text;
         text = fname.value + " " + lname.value;
@@ -211,10 +242,25 @@
     
     // RADIO
     /* Idee: Wahl des Benutzers abfragen */
+    /* left.addEventListener("input",showRadioCheck)
+    right.addEventListener("input",showRadioCheck) */
+    function showRadioCheck(){
+        if(left.checked){
+            outRadio.innerText = 'blau wurde gewählt'
+        } else{
+            outRadio.innerText = 'rot wurde gewählt'
+        }
+    }
+    /* Option mit dem Event-Object */
+    left.addEventListener("input",showRadioCheckMitEvent)
+    right.addEventListener("input",showRadioCheckMitEvent)
+    function showRadioCheckMitEvent(event){
+        outRadio.innerText = event.target.value + ' wurde gewählt'
+    }
 
 
     // CHECKBOX
-    btnPizza.addEventListener("click", getSelected, true);
+    btnPizza.addEventListener("click", getSelected);
     function getSelected() {
         outPizza.textContent = "";
         // console.log('hallo aus getSelected');
