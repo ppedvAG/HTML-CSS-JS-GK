@@ -7,8 +7,12 @@
 </head>
 <body>
     <h1>JS WINDOW</h1>
-
-<script>
+    
+    <!-- #region 7 setTimeout() -->
+    <button onclick="setTimeout(countClicks, 500, this)">0</button>
+    <!-- #endregion -->
+    
+    <script>
     //#######################################################
     console.log(this)
 
@@ -59,9 +63,24 @@
     console.info('TEST 6: return von confirm()')
     const confirmReturn = confirm('Corona ist Scheiße. Einverstanden?')
     console.log('confirmReturn :', confirmReturn);
+
+
+    //#region 7 setTimeout()
+    //#######################################################
+    console.info('TEST 7: setTimeout()')
+    function countClicks(el) {        
+        +el.innerText ++
+    }
+    //#endregion
+    
     /* 
     *todo
-    wie kann ich Inhalt von Abbrechen-Button ändern? */
+    wie kann ich Inhalt von Abbrechen-Button ändern? 
+    
+    *todo
+    Objekt window hat unter seinen Eigenschaften die Funktion HTMLAnchorElement() z.B. und die Funktion Number(). 
+    Warum kann ich Number() aufrufen, auch mit dem Schlüsselwort new, HTMLAnchorElement() aber nicht?
+    */
 
 </script>
     

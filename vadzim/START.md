@@ -143,11 +143,11 @@ commited
 - [x] Navigieren in DOM - Traversing
 - [x] [dom-traversing.html](./theory-app/dom-traversing.html)
 - [x] DOM Knoten & Elemente
+- [x] [js-event-object.html](./theory-app/js-event-object.html)
 
 ## M15 | FORMS
 
 - [x] [js-forms.html](./theory-app/js-forms.html)
-- [x] Event-Object
 
 ## Übung : password confirm
 

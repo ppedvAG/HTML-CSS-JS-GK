@@ -266,6 +266,8 @@
     function showRadioCheckMitEventO(event) {
         outRadio.innerText = event.target.value + ' wurde gewählt'
     }
+    /* Beachte, dass der Event-Handler mit einem Argument definiert ist. 
+    Der Methode `addEventListener` sollte das aber nicht mitgeteilt werden */
 
 
     // CHECKBOX    
@@ -283,6 +285,7 @@
             }
         });
     }
+
 
     // RANGE
     minSpan.textContent = inpPrice.min;
