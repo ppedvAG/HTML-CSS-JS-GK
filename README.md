@@ -9,3 +9,8 @@ Ein Kurs von PPEDV AG
 [Arbeitsbereich von Johannes](./johannes/START.md)
 
 [Arbeitsbereich von Vadzim](./vadzim/START.md)
+
+http://www.ppedv.de/schulung/kurse/JavaScript-HTML-Programmierung-Client-CSS-Syntax-Event-Cookie.aspx
+
+
+Javascript HTML CSS Kurs Schulung PPEDV AG Weiterbildung Training
