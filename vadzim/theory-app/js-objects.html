@@ -24,19 +24,15 @@
     <table id="myTable">
 
     </table>
-
-
-
-
-
-
-
     <!-- 
         beim Klick auf den Button sollen die neuen Objekte in ein Array hinzugefügt werden
         Array kann tabelarisch ausgegeben werden
      -->
 
     <script>
+        let myObject = new Object()
+        console.log('myObject :', myObject);
+
         function Person(fname, lname, age) {
             this.fname = fname;
             this.lname = lname;
@@ -74,6 +70,23 @@
 
                 outp.textContent += newPerson[prop];
             } */
+
+            /* CUSTOM OBJECT METHODS 
+            function MyElement(tagName) {
+                this.element = document.createElement(tagName);
+            }
+            MyElement.prototype.setContent = function(html) { // Example method on object
+                this.element.innerHTML = html;
+            };
+            var x = new MyElement('div');
+            x.setContent('Hello World!');
+            document.body.appendChild(x.element);
+            */
+
+            /* 
+            *todo
+            Was ist der Unterschied zwischen `this` und `self`?
+            */
 
         }
 

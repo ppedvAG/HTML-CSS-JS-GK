@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id=myHTML lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,6 @@
             border-radius: 10px;
             padding-left: 2em;
         }
-
         a {
             display: block;
             font-size: 3em;
@@ -27,10 +26,6 @@
 <body>
     <h1>DOM TRAVERSING</h1>
 
-    <h2>DOC PROPS</h2>
-    <ol id="doc_props_ol">
-    </ol>
-
     <h2>DOC METHODS</h2>
     <h3>getElementById('')</h3>
     <pre>
@@ -41,6 +36,7 @@
 
     <p id="p_id">p1</p>
     <p id="p_id">p2</p>
+
 
     <h3>getElementsByClassName('')</h3>
     <p class="p_class">p1</p>
@@ -57,12 +53,7 @@
         siehe die h3-Dekoration
     </pre>
 
-
-    <h3>getSelection()</h3>
-    <p>test für selection</p>
-    <button onmouseover="select()">nicht klicken</button>
-
-
+    
     <h3>appendChild()</h3>
     <p id="p_mit_a"></p>
 
@@ -71,7 +62,6 @@
     <p id="p_mit_span">
         <span id="span_in_p">text von span</span>
     </p>
-
 
 
     <h3>removeChild</h3>
@@ -95,16 +85,7 @@
         </tbody>
     </table>
 
-
-
-
     <script>
-        /* DOC PROPS */
-        for (let prop in document) {
-            doc_props_ol.innerHTML += `
-            <li>${prop}</li>`
-        }
-
         /* DOC METHODS */
         // document.getElementById('')
         document.getElementById('p_id').innerText += 'test'
@@ -132,24 +113,6 @@
             // text-decoration // kebab-case
         }
 
-
-        // document.getSelection('h2')
-        console.log("document.getSelection('h2') :", document.getSelection());
-
-        function select() {
-            let selObj = document.getSelection();
-            alert(selObj.toString()); // typeof.. object
-            console.log('selObj :', selObj);
-            let selRange = selObj.getRangeAt(0);
-            // do stuff with the range
-            selRange.style.fontSize = '30px'
-            /* 
-            *todo
-            ausprobieren
-            */
-        }
-
-
         // append.Child
         /* als Alernative zu 
            // insertRow
@@ -176,9 +139,6 @@
         // removeChild
         let tBody = document.getElementById('t_body')
         tBody.removeChild(tBody.children[2])
-        // console.log('object :', object);
-
-
     </script>
 </body>
 

@@ -184,6 +184,7 @@ commited
 - [ ] Column-Count
 - [ ] CSS Funktionen
 - [ ] CSS Variables
+- [ ] [z-index & stacking context](./theory-app/css-z-index.html)
 
 select - options löschen, zwischenspeichern, filtern
 
@@ -194,3 +195,11 @@ select - options löschen, zwischenspeichern, filtern
 ## M0 | JS INTERMEDIATE
 
 - [ ] offene Themen nach Bedarf der TeilnehmerInnen
+
+## M0 | PHRASING CONTENT
+
+- [ ] phrasing tags
+- [ ] font props
+- [ ] text props
+- [ ] breaks & spaces
+- [ ] counter props? <!-- https://gist.github.com/patik/89ee6092c72a9e39950445c01598517a -->

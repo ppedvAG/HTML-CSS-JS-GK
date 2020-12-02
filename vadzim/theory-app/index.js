@@ -1,1 +1,1 @@
-console.log('index.js ist angeschlossen');
+console.log('index.js ist angeschlossen'); 

@@ -1,200 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS SELECTORS</title>
+    <title>CSS PSEUDO SEL</title>
     <style>
-        /* Man kann HTML-Elemente durch ihre Merkmale selektieren */
-
-        /* ############################################################################## */
-        /* ALLEIN STEHENDE SELEKTOREN */
-        /* ############################################################################## */
-
-        /* ############################################################################## */
-        /* UNIVERSALER SELEKTOR / STERN SELEKTOR
-        #gk
-        */
-        * {
-            border: thin solid;
-        }
-
-
-
-        /* ############################################################################## */
-        /* TYP SELEKTOR / TAG-NAME SELEKTOR
-        #gk
-        alle Elemente vom Typ div wurden selektiert
-        */
-        div {
-            text-decoration: underline;
-        }
-
-
-
-        /* ############################################################################## */
-        /* ID SELEKTOR 
-        #gk
-        `id` ist ein sehr oft vorkommendes HTML-Attribut. 
-        Deshalb hat es auch einen extra Selektor in CSS.
-        */
-        #myH2 {
-            font-style: italic;
-        }
-
-
-
-        /* ############################################################################## */
-        /* CLASS SELEKTOR        
-        #gk
-        Attribut `class` ist genauso verbreitet wie `id`.
-        */
-        .borderClass {
-            background-color: coral;
-        }
-
-
-
-
-
-        /* ############################################################################## */
-        /* KOMBINATOREN: MEHRERE ELEMENTGRUPPEN AUF EINMAL */
-        /* ############################################################################## */
-
-        /* Alle einzeln stehenden Selektoren dürfen kombiniert werden */
-
-
-        /* ############################################################################## */
-        /* AUFLISTUNG 
-        #gk
-        */
-        pre,
-        .borderClass {
-            border: thick dotted pink;
-        }
-
-
-
-        /* ############################################################################## */
-        /* KOMBINATOREN: ELEMENTGRUPPEN RELATIV ZU ANDEREN ELEMENTGRUPPEN  */
-        /* ############################################################################## */
-
-
-        /* ############################################################################## */
-        /* UNMITTELBARE GESCHWISTER
-        #gk
-        alle p, die unmittelbar nach h2 vorkommen
-        */
-        h2+p {
-            font-weight: 900;
-        }
-
-
-
-        /* ############################################################################## */
-        /* ALLE GESCHWISTER        
-        */
-        h2~p {
-            font-weight: 900;
-        }
-
-
-
-        /* ############################################################################## */
-        /* VORFAHR-NACHFAHR-SELEKTOR 
-        #gk
-        */
-        .borderClass div {
-            color: yellowgreen;
-        }
-
-
-
-        /* ############################################################################## */
-        /* ELTERN-KIND-SELEKTOR 
-        #gk
-        */
-        .borderClass>div {
-            text-decoration: line-through;
-        }
-
-
-
-
-        /* ############################################################################## */
-        /* SELEKTOREN FÜR BESTIMMTE ATTRIBUTE ODER FÜR ELEMENTE MIT BESTIMMTEN ATTRIBUTEN  */
-        /* ############################################################################## */
-        /*       
-        `E` muss durch den Selektor für ein konkretes HTML-Element ersetzt werden.
-        `attributename` muss durch einen konkreten Attributnamen ersetzt werden.  
-        */
-
-        /* Erfasst Elemente, in denen das angegebene Attribut vorkommt. Egal mit welchem Wert. */
-        E[attributename] {
-            color: green
-        }
-
-        /* reales Beispiel: Die Schriftfarbe aller Links, die ein target-Attribut haben, wird grün. */
-        a[target] {
-            color: green
-        }
-
-        /* Die Schriftfarbe aller Elemente, die ein target-Attribut haben, wird grün. */
-        [target] {
-            color: green
-        }
-
-        /* Erfasst Elemente vom Typ E, deren Attribut mit der Zeichenkette "abc" übereinstimmt */
-        E[attribute="abc"] {
-            color: green
-        }
-
-        /* Hilfreich für Styling von Elementen ohne Klasse oder ID. */
-        input[type="text"] {
-            color: green
-        }
-
-        /* Erfasst Elemente vom Typ E, deren Attribut mit der Zeichenkette "abc" NICHT übereinstimmt */
-        E:not([attribute="abc"]) {
-            color: green
-        }
-
-        /* Erfasst Elemente vom Typ E, deren Attribut mit der Zeichenkette mit "abc" beginnt */
-        E[attribute^="abc"] {
-            color: green
-        }
-
-        /* Erfasst Elemente vom Typ E, deren Attribut mit der Zeichenkette mit "abc" endet */
-        E[attribute$="abc"] {
-            color: green
-        }
-
-        /* Erfasst Elemente vom Typ E, deren Attribut die Zeichenkette "abc" enthält */
-        E[attribute*="abc"] {
-            color: green
-        }
-
-        /* Damit wird nach einem bestimmten (ganzen) Wort gesucht. */
-        [attribute~="value"] {
-            color: green
-        }
-
-        /* Mit [attribute|="value"] wird ein Wort am Beginn ausgewählt. 
-        Das wählt alle Klassen, die mit „top“ beginnen aus; 
-        sowohl „top header“ als auch „top-header“ würden davon ausgewählt. */
-        [class|="top"] {
-            color: green
-        }
-
-
-
-
         /* ############################################################################## */
         /* PSEUDO SELEKTOREN - PSEUDO ELEMENTE */
         /* ############################################################################## */
 
-        /* `Pseudo` bedeutet - es wird ein imaginäres Objekt selektiert */
+        /* `Pseudo` bedeutet - es wird ein imaginäres Objekt selektiert
+        Pseudo-Element-Selektor wählt einen bestimmten Teil eines Elements aus, z.B. den ersten Buchstaben.
+        
+        Pseudo-Klasse wählt einen bestimmten Zustand eines Elements aus. Z.B. besuchte Anker-Links, Elemente mit dem Mouse-Zeiger drüber.  */
+
 
         /* ::after 
         #gk
@@ -250,14 +69,6 @@
         /* ::slotted */
 
         /* ::spelling-error */
-
-        /* *todo
-        https://codepen.io/rachelandrew/pen/OepQry
-
-        Pseudo-Element-Selektor wählt einen bestimmten Teil eines Elements aus, z.B. den ersten Buchstaben.
-        Stimmt das?
-
-         */
 
 
         /* ############################################################################## */
@@ -325,6 +136,7 @@
         /* :host-context() */
 
         /* :hover 
+        #gk
         erfasst das Element, über dem es mit der Maus rübergefahren wird
         */
 
@@ -362,8 +174,8 @@
         /* :no-button */
 
         /* :not() 
-        :not(x)
-        Erfasst alle Elemente, die mit x nicht ausgeschlossen werden
+        :not(_selector_)
+        Erfasst alle Elemente, die mit _selector_ nicht ausgeschlossen werden
         z.B. :not(p)
         */
 
@@ -473,58 +285,17 @@
 
         /* :where */
 
-        /* nccht aufgelistet sind Pseudo-Elemente und Pseudo-Klassen mit Vendor-Präfixen */
+        /* nicht aufgelistet sind Pseudo-Elemente und Pseudo-Klassen mit Vendor-Präfixen */
 
-        /* ############################################################################## */
-        /* ############################################################################## */
-        /* ############################################################################## */
         /* ############################################################################## */
     </style>
 </head>
-
 <body>
-    <h1>CSS SELECTORS</h1>
-    <pre>Benutze die Find-Funktion für Hashtag gk in dieser Datei!</pre>
-
-
-    <h2>heading 2</h2>
-    <h2>heading 2</h2>
-
-    <h3>heading 2</h3>
-    <h3 id="myH3">heading 3</h3>
-
-    <p>paragraph</p>
-
-    <div class="borderClass">
-        div ebene 1
-        <div>
-            div ebene 2
-            <div>div ebene 3</div>
-        </div>
-    </div>
-
-    <div class="borderClass">
-        div ebene 1
-        <div>
-            div ebene 2
-            <div>div ebene 3</div>
-        </div>
-    </div>
-
-    <!-- 
-        *todo
-        
-        https://www.w3schools.com/cssref/css_selectors.asp
-
-        Diese Datei muss besser strukturiert werden.
-
-        Diese Datei ist zu groß (?)
-
-        zum Nachlesen: Pseudoklassen, strukturelle Pseudoklassen, Pseudoelemente
-        https://de.wikipedia.org/wiki/Cascading_Style_Sheets#CSS3
-
-     -->
-
+    <h1>CSS PSEUDO SEL</h1>
+    
 </body>
-
 </html>
+<!-- 
+    *todo
+    sind Pseudo-Klassen mit runden Klammern Funktionen? Z.B. :not()
+ -->
